@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA0292299A7C5500A1739F /* PockerControllerApp.swift */; };
+		10BA0295299A7C5500A1739F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA0294299A7C5500A1739F /* ContentView.swift */; };
+		10BA0297299A7C5600A1739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0296299A7C5600A1739F /* Assets.xcassets */; };
+		10BA029A299A7C5600A1739F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0299299A7C5600A1739F /* Preview Assets.xcassets */; };
+		10BA02A4299A7C5700A1739F /* PockerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02A3299A7C5700A1739F /* PockerControllerTests.swift */; };
+		10BA02AE299A7C5700A1739F /* PockerControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02AD299A7C5700A1739F /* PockerControllerUITests.swift */; };
+		10BA02B0299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02AF299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10BA02A0299A7C5700A1739F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10BA0287299A7C5500A1739F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10BA028E299A7C5500A1739F;
+			remoteInfo = PockerController;
+		};
+		10BA02AA299A7C5700A1739F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10BA0287299A7C5500A1739F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10BA028E299A7C5500A1739F;
+			remoteInfo = PockerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10BA028F299A7C5500A1739F /* PockerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BA0292299A7C5500A1739F /* PockerControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerApp.swift; sourceTree = "<group>"; };
+		10BA0294299A7C5500A1739F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10BA0296299A7C5600A1739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10BA0299299A7C5600A1739F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		10BA029F299A7C5700A1739F /* PockerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PockerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BA02A3299A7C5700A1739F /* PockerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerTests.swift; sourceTree = "<group>"; };
+		10BA02A9299A7C5700A1739F /* PockerControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PockerControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BA02AD299A7C5700A1739F /* PockerControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerUITests.swift; sourceTree = "<group>"; };
+		10BA02AF299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10BA028C299A7C5500A1739F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10BA029C299A7C5700A1739F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10BA02A6299A7C5700A1739F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10BA0286299A7C5500A1739F = {
+			isa = PBXGroup;
+			children = (
+				10BA0291299A7C5500A1739F /* PockerController */,
+				10BA02A2299A7C5700A1739F /* PockerControllerTests */,
+				10BA02AC299A7C5700A1739F /* PockerControllerUITests */,
+				10BA0290299A7C5500A1739F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10BA0290299A7C5500A1739F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10BA028F299A7C5500A1739F /* PockerController.app */,
+				10BA029F299A7C5700A1739F /* PockerControllerTests.xctest */,
+				10BA02A9299A7C5700A1739F /* PockerControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10BA0291299A7C5500A1739F /* PockerController */ = {
+			isa = PBXGroup;
+			children = (
+				10BA0292299A7C5500A1739F /* PockerControllerApp.swift */,
+				10BA0294299A7C5500A1739F /* ContentView.swift */,
+				10BA0296299A7C5600A1739F /* Assets.xcassets */,
+				10BA0298299A7C5600A1739F /* Preview Content */,
+			);
+			path = PockerController;
+			sourceTree = "<group>";
+		};
+		10BA0298299A7C5600A1739F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				10BA0299299A7C5600A1739F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10BA02A2299A7C5700A1739F /* PockerControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02A3299A7C5700A1739F /* PockerControllerTests.swift */,
+			);
+			path = PockerControllerTests;
+			sourceTree = "<group>";
+		};
+		10BA02AC299A7C5700A1739F /* PockerControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02AD299A7C5700A1739F /* PockerControllerUITests.swift */,
+				10BA02AF299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift */,
+			);
+			path = PockerControllerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10BA028E299A7C5500A1739F /* PockerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10BA02B3299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerController" */;
+			buildPhases = (
+				10BA028B299A7C5500A1739F /* Sources */,
+				10BA028C299A7C5500A1739F /* Frameworks */,
+				10BA028D299A7C5500A1739F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PockerController;
+			productName = PockerController;
+			productReference = 10BA028F299A7C5500A1739F /* PockerController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10BA029E299A7C5700A1739F /* PockerControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10BA02B6299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerControllerTests" */;
+			buildPhases = (
+				10BA029B299A7C5700A1739F /* Sources */,
+				10BA029C299A7C5700A1739F /* Frameworks */,
+				10BA029D299A7C5700A1739F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10BA02A1299A7C5700A1739F /* PBXTargetDependency */,
+			);
+			name = PockerControllerTests;
+			productName = PockerControllerTests;
+			productReference = 10BA029F299A7C5700A1739F /* PockerControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10BA02A8299A7C5700A1739F /* PockerControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10BA02B9299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerControllerUITests" */;
+			buildPhases = (
+				10BA02A5299A7C5700A1739F /* Sources */,
+				10BA02A6299A7C5700A1739F /* Frameworks */,
+				10BA02A7299A7C5700A1739F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10BA02AB299A7C5700A1739F /* PBXTargetDependency */,
+			);
+			name = PockerControllerUITests;
+			productName = PockerControllerUITests;
+			productReference = 10BA02A9299A7C5700A1739F /* PockerControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10BA0287299A7C5500A1739F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					10BA028E299A7C5500A1739F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					10BA029E299A7C5700A1739F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 10BA028E299A7C5500A1739F;
+					};
+					10BA02A8299A7C5700A1739F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 10BA028E299A7C5500A1739F;
+					};
+				};
+			};
+			buildConfigurationList = 10BA028A299A7C5500A1739F /* Build configuration list for PBXProject "PockerController" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10BA0286299A7C5500A1739F;
+			productRefGroup = 10BA0290299A7C5500A1739F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10BA028E299A7C5500A1739F /* PockerController */,
+				10BA029E299A7C5700A1739F /* PockerControllerTests */,
+				10BA02A8299A7C5700A1739F /* PockerControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10BA028D299A7C5500A1739F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10BA029A299A7C5600A1739F /* Preview Assets.xcassets in Resources */,
+				10BA0297299A7C5600A1739F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10BA029D299A7C5700A1739F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10BA02A7299A7C5700A1739F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10BA028B299A7C5500A1739F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10BA0295299A7C5500A1739F /* ContentView.swift in Sources */,
+				10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10BA029B299A7C5700A1739F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10BA02A4299A7C5700A1739F /* PockerControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10BA02A5299A7C5700A1739F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10BA02B0299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift in Sources */,
+				10BA02AE299A7C5700A1739F /* PockerControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10BA02A1299A7C5700A1739F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10BA028E299A7C5500A1739F /* PockerController */;
+			targetProxy = 10BA02A0299A7C5700A1739F /* PBXContainerItemProxy */;
+		};
+		10BA02AB299A7C5700A1739F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10BA028E299A7C5500A1739F /* PockerController */;
+			targetProxy = 10BA02AA299A7C5700A1739F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10BA02B1299A7C5700A1739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10BA02B2299A7C5700A1739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10BA02B4299A7C5700A1739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PockerController/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.PockerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10BA02B5299A7C5700A1739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PockerController/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.PockerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10BA02B7299A7C5700A1739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.PockerControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PockerController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PockerController";
+			};
+			name = Debug;
+		};
+		10BA02B8299A7C5700A1739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.PockerControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PockerController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PockerController";
+			};
+			name = Release;
+		};
+		10BA02BA299A7C5700A1739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.PockerControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PockerController;
+			};
+			name = Debug;
+		};
+		10BA02BB299A7C5700A1739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.PockerControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PockerController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10BA028A299A7C5500A1739F /* Build configuration list for PBXProject "PockerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10BA02B1299A7C5700A1739F /* Debug */,
+				10BA02B2299A7C5700A1739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10BA02B3299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10BA02B4299A7C5700A1739F /* Debug */,
+				10BA02B5299A7C5700A1739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10BA02B6299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10BA02B7299A7C5700A1739F /* Debug */,
+				10BA02B8299A7C5700A1739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10BA02B9299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10BA02BA299A7C5700A1739F /* Debug */,
+				10BA02BB299A7C5700A1739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10BA0287299A7C5500A1739F /* Project object */;
+}
