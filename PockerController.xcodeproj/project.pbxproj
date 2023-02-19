@@ -8,12 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA0292299A7C5500A1739F /* PockerControllerApp.swift */; };
-		10BA0295299A7C5500A1739F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA0294299A7C5500A1739F /* ContentView.swift */; };
 		10BA0297299A7C5600A1739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0296299A7C5600A1739F /* Assets.xcassets */; };
 		10BA029A299A7C5600A1739F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0299299A7C5600A1739F /* Preview Assets.xcassets */; };
 		10BA02A4299A7C5700A1739F /* PockerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02A3299A7C5700A1739F /* PockerControllerTests.swift */; };
 		10BA02AE299A7C5700A1739F /* PockerControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02AD299A7C5700A1739F /* PockerControllerUITests.swift */; };
 		10BA02B0299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02AF299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift */; };
+		10BA02C6299A835200A1739F /* DDCHardware-Compressed.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10BA02C1299A835200A1739F /* DDCHardware-Compressed.otf */; };
+		10BA02C7299A835200A1739F /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10BA02C2299A835200A1739F /* Gilroy-Regular.ttf */; };
+		10BA02C8299A835200A1739F /* DDCHardware-Condensed.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10BA02C3299A835200A1739F /* DDCHardware-Condensed.otf */; };
+		10BA02C9299A835200A1739F /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10BA02C4299A835200A1739F /* Gilroy-Medium.ttf */; };
+		10BA02CA299A835200A1739F /* DDCHardware-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10BA02C5299A835200A1739F /* DDCHardware-Regular.otf */; };
+		10BA02CF299D1A8C00A1739F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02CE299D1A8C00A1739F /* SplashView.swift */; };
+		10BA02D129A0ACCD00A1739F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02D029A0ACCD00A1739F /* WelcomeView.swift */; };
+		10BA02D529A0B23400A1739F /* ShemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02D429A0B23400A1739F /* ShemeColor.swift */; };
+		10BA02D729A10C0700A1739F /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02D629A10C0700A1739F /* Typography.swift */; };
+		10BA02DA29A1E15700A1739F /* GoldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02D929A1E15700A1739F /* GoldButton.swift */; };
+		10BA02DC29A1F1B700A1739F /* BackgroundClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02DB29A1F1B700A1739F /* BackgroundClearView.swift */; };
+		10BA02DE29A20BC400A1739F /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02DD29A20BC400A1739F /* QrCodeScannerView.swift */; };
+		10BA02E329A2113200A1739F /* GuestStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02E229A2113200A1739F /* GuestStack.swift */; };
+		10BA02E529A2114100A1739F /* AuthStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02E429A2114100A1739F /* AuthStack.swift */; };
+		10BA02E729A211C800A1739F /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02E629A211C800A1739F /* AuthRouter.swift */; };
+		10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02E829A211D600A1739F /* GuestRouter.swift */; };
+		10BA02ED29A2141600A1739F /* GuestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02EC29A2141600A1739F /* GuestRoute.swift */; };
+		10BA02EF29A2143900A1739F /* AuthRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02EE29A2143900A1739F /* AuthRoute.swift */; };
+		10BA02F129A227E900A1739F /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02F029A227E900A1739F /* WaitingRoomView.swift */; };
+		10BA02F329A227FA00A1739F /* GameRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02F229A227FA00A1739F /* GameRoomView.swift */; };
+		10BA02F529A2280A00A1739F /* BarRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02F429A2280A00A1739F /* BarRoomView.swift */; };
+		10BA02F729A2298A00A1739F /* RootStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02F629A2298A00A1739F /* RootStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +57,6 @@
 /* Begin PBXFileReference section */
 		10BA028F299A7C5500A1739F /* PockerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA0292299A7C5500A1739F /* PockerControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerApp.swift; sourceTree = "<group>"; };
-		10BA0294299A7C5500A1739F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		10BA0296299A7C5600A1739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BA0299299A7C5600A1739F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10BA029F299A7C5700A1739F /* PockerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PockerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +64,29 @@
 		10BA02A9299A7C5700A1739F /* PockerControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PockerControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA02AD299A7C5700A1739F /* PockerControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerUITests.swift; sourceTree = "<group>"; };
 		10BA02AF299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10BA02C1299A835200A1739F /* DDCHardware-Compressed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DDCHardware-Compressed.otf"; sourceTree = "<group>"; };
+		10BA02C2299A835200A1739F /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		10BA02C3299A835200A1739F /* DDCHardware-Condensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DDCHardware-Condensed.otf"; sourceTree = "<group>"; };
+		10BA02C4299A835200A1739F /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		10BA02C5299A835200A1739F /* DDCHardware-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DDCHardware-Regular.otf"; sourceTree = "<group>"; };
+		10BA02CB299A872D00A1739F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BA02CE299D1A8C00A1739F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		10BA02D029A0ACCD00A1739F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		10BA02D429A0B23400A1739F /* ShemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShemeColor.swift; sourceTree = "<group>"; };
+		10BA02D629A10C0700A1739F /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		10BA02D929A1E15700A1739F /* GoldButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldButton.swift; sourceTree = "<group>"; };
+		10BA02DB29A1F1B700A1739F /* BackgroundClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundClearView.swift; sourceTree = "<group>"; };
+		10BA02DD29A20BC400A1739F /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerView.swift; sourceTree = "<group>"; };
+		10BA02E229A2113200A1739F /* GuestStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestStack.swift; sourceTree = "<group>"; };
+		10BA02E429A2114100A1739F /* AuthStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStack.swift; sourceTree = "<group>"; };
+		10BA02E629A211C800A1739F /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		10BA02E829A211D600A1739F /* GuestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestRouter.swift; sourceTree = "<group>"; };
+		10BA02EC29A2141600A1739F /* GuestRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestRoute.swift; sourceTree = "<group>"; };
+		10BA02EE29A2143900A1739F /* AuthRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRoute.swift; sourceTree = "<group>"; };
+		10BA02F029A227E900A1739F /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
+		10BA02F229A227FA00A1739F /* GameRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoomView.swift; sourceTree = "<group>"; };
+		10BA02F429A2280A00A1739F /* BarRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarRoomView.swift; sourceTree = "<group>"; };
+		10BA02F629A2298A00A1739F /* RootStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +137,12 @@
 		10BA0291299A7C5500A1739F /* PockerController */ = {
 			isa = PBXGroup;
 			children = (
+				10BA02DF29A20E6200A1739F /* Router */,
+				10BA02D229A0B1C500A1739F /* Models */,
+				10BA02BF299A80E100A1739F /* Resources */,
+				10BA02BC299A803100A1739F /* UI */,
 				10BA0292299A7C5500A1739F /* PockerControllerApp.swift */,
-				10BA0294299A7C5500A1739F /* ContentView.swift */,
+				10BA02CB299A872D00A1739F /* Info.plist */,
 				10BA0296299A7C5600A1739F /* Assets.xcassets */,
 				10BA0298299A7C5600A1739F /* Preview Content */,
 			);
@@ -125,6 +172,104 @@
 				10BA02AF299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift */,
 			);
 			path = PockerControllerUITests;
+			sourceTree = "<group>";
+		};
+		10BA02BC299A803100A1739F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02BE299A808D00A1739F /* Screens */,
+				10BA02BD299A807F00A1739F /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		10BA02BD299A807F00A1739F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02D829A1E0EF00A1739F /* Buttons */,
+				10BA02DB29A1F1B700A1739F /* BackgroundClearView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		10BA02BE299A808D00A1739F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02CE299D1A8C00A1739F /* SplashView.swift */,
+				10BA02D029A0ACCD00A1739F /* WelcomeView.swift */,
+				10BA02DD29A20BC400A1739F /* QrCodeScannerView.swift */,
+				10BA02F029A227E900A1739F /* WaitingRoomView.swift */,
+				10BA02F229A227FA00A1739F /* GameRoomView.swift */,
+				10BA02F429A2280A00A1739F /* BarRoomView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		10BA02BF299A80E100A1739F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02C0299A818800A1739F /* Fonts */,
+				10BA02D429A0B23400A1739F /* ShemeColor.swift */,
+				10BA02D629A10C0700A1739F /* Typography.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		10BA02C0299A818800A1739F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02C1299A835200A1739F /* DDCHardware-Compressed.otf */,
+				10BA02C3299A835200A1739F /* DDCHardware-Condensed.otf */,
+				10BA02C5299A835200A1739F /* DDCHardware-Regular.otf */,
+				10BA02C4299A835200A1739F /* Gilroy-Medium.ttf */,
+				10BA02C2299A835200A1739F /* Gilroy-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		10BA02D229A0B1C500A1739F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		10BA02D829A1E0EF00A1739F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02D929A1E15700A1739F /* GoldButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		10BA02DF29A20E6200A1739F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02EB29A213F500A1739F /* Guest */,
+				10BA02EA29A213EB00A1739F /* Auth */,
+				10BA02F629A2298A00A1739F /* RootStack.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		10BA02EA29A213EB00A1739F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02E629A211C800A1739F /* AuthRouter.swift */,
+				10BA02E429A2114100A1739F /* AuthStack.swift */,
+				10BA02EE29A2143900A1739F /* AuthRoute.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		10BA02EB29A213F500A1739F /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02E829A211D600A1739F /* GuestRouter.swift */,
+				10BA02E229A2113200A1739F /* GuestStack.swift */,
+				10BA02EC29A2141600A1739F /* GuestRoute.swift */,
+			);
+			path = Guest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +376,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BA02C6299A835200A1739F /* DDCHardware-Compressed.otf in Resources */,
+				10BA02C9299A835200A1739F /* Gilroy-Medium.ttf in Resources */,
+				10BA02CA299A835200A1739F /* DDCHardware-Regular.otf in Resources */,
 				10BA029A299A7C5600A1739F /* Preview Assets.xcassets in Resources */,
+				10BA02C8299A835200A1739F /* DDCHardware-Condensed.otf in Resources */,
 				10BA0297299A7C5600A1739F /* Assets.xcassets in Resources */,
+				10BA02C7299A835200A1739F /* Gilroy-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +407,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10BA0295299A7C5500A1739F /* ContentView.swift in Sources */,
+				10BA02F729A2298A00A1739F /* RootStack.swift in Sources */,
+				10BA02F529A2280A00A1739F /* BarRoomView.swift in Sources */,
+				10BA02F129A227E900A1739F /* WaitingRoomView.swift in Sources */,
+				10BA02D729A10C0700A1739F /* Typography.swift in Sources */,
+				10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */,
+				10BA02D529A0B23400A1739F /* ShemeColor.swift in Sources */,
+				10BA02EF29A2143900A1739F /* AuthRoute.swift in Sources */,
+				10BA02DA29A1E15700A1739F /* GoldButton.swift in Sources */,
+				10BA02E329A2113200A1739F /* GuestStack.swift in Sources */,
+				10BA02ED29A2141600A1739F /* GuestRoute.swift in Sources */,
 				10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */,
+				10BA02E529A2114100A1739F /* AuthStack.swift in Sources */,
+				10BA02CF299D1A8C00A1739F /* SplashView.swift in Sources */,
+				10BA02DE29A20BC400A1739F /* QrCodeScannerView.swift in Sources */,
+				10BA02D129A0ACCD00A1739F /* WelcomeView.swift in Sources */,
+				10BA02E729A211C800A1739F /* AuthRouter.swift in Sources */,
+				10BA02DC29A1F1B700A1739F /* BackgroundClearView.swift in Sources */,
+				10BA02F329A227FA00A1739F /* GameRoomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +511,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -399,6 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -419,6 +587,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PockerController/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PockerController/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +616,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PockerController/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PockerController/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
