@@ -13,6 +13,8 @@ struct GuestStack: View {
                             WelcomeView()
                         case GuestRoute.qrCode:
                             QrCodeScannerView()
+                            .navigationBarHidden(true)
+                            .ignoresSafeArea(.all)
                     }
                 }
         }

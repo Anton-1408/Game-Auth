@@ -1,0 +1,6 @@
+framework module Pods_PockerControllerTests {
+  umbrella header "Pods-PockerControllerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,21 @@
+PODS:
+  - MercariQRScanner (1.9.0)
+
+DEPENDENCIES:
+  - MercariQRScanner (from `https://github.com/Looking4Cache/QRScanner.git`)
+
+EXTERNAL SOURCES:
+  MercariQRScanner:
+    :git: https://github.com/Looking4Cache/QRScanner.git
+
+CHECKOUT OPTIONS:
+  MercariQRScanner:
+    :commit: a6cf77d6a38446f4715170af841bca89cc01b8b2
+    :git: https://github.com/Looking4Cache/QRScanner.git
+
+SPEC CHECKSUMS:
+  MercariQRScanner: e5aea873969af59b09b4cc411fc1c5b6293dba44
+
+PODFILE CHECKSUM: b86122e5ef58416c47f424fa6b657f57540d2a04
+
+COCOAPODS: 1.11.3
