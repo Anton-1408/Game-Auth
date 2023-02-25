@@ -4,27 +4,31 @@ import SwiftUI
 
 struct QrCodeScannerView: UIViewControllerRepresentable {
     class Coordinator: NSObject, QRScannerViewDelegate {
-        func qrScannerView(_ qrScannerView: QRScannerView, didFailure error: QRScannerError) {
-            print("error", error)
+        var parent: QrCodeScannerView;
+        
+        init(_ parent: QrCodeScannerView) {
+            self.parent = parent
         }
+   
+        func qrScannerView(_ qrScannerView: QRScannerView, didFailure error: QRScannerError) {}
 
         func qrScannerView(_ qrScannerView: QRScannerView, didSuccess code: String) {
-            print("success", code)
+            parent.viewModel.joingToTheGame(code)
         }
     }
 
-    func makeCoordinator() -> Coordinator {
-        Coordinator()
-    }
-    
+    @ObservedObject var viewModel: QrCodeScannerViewModel;
+
     typealias QRCodeViewController = QRCodeScannerController
     
     func makeUIViewController(context: Context) -> QRCodeScannerController {
-        let qrCodeController = QRCodeScannerController()
-        
-        qrCodeController.setDelegate(coordinator: context.coordinator)
+        let qrCodeController = QRCodeScannerController(coordinator: context.coordinator)
         
         return qrCodeController
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
     }
     
     func updateUIViewController(_ uiViewController: QRCodeScannerController, context: Context) {}

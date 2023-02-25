@@ -18,8 +18,9 @@ struct SplashView: View {
             }
         }
         .background(BackgroundClearView())
+        .preferredColorScheme(ColorScheme.dark)
         .onAppear{
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                   withAnimation {
                       self.isActive = true
                   }

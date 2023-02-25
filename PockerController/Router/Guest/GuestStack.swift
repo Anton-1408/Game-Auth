@@ -6,15 +6,18 @@ struct GuestStack: View {
 
     var body: some View {
         NavigationStack(path: $router.path) {
-            WelcomeView()
+            WelcomeAssembly().build()
                 .navigationDestination(for: GuestRoute.self) { route in
                     switch route {
-                        case GuestRoute.welcome:
-                            WelcomeView()
-                        case GuestRoute.qrCode:
-                            QrCodeScannerView()
-                            .navigationBarHidden(true)
-                            .ignoresSafeArea(.all)
+                        case .welcome:
+                                WelcomeAssembly().build()
+                        case .qrCode:
+                                QRCodeScannerAssembly().build()
+                                    .navigationBarHidden(true)
+                                    .ignoresSafeArea(.all)
+                        case .roomJoingToTheGame(let qrCodeData):
+                                RoomJoingToTheGameAssambly().build(for: qrCodeData)
+                                   .navigationBarHidden(true)
                     }
                 }
         }

@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 struct WelcomeView: View {
-    @ObservedObject var router = GuestRouter.shared;
+    @ObservedObject var viewModel: WelcomeViewModel;
     
     var body: some View {
         VStack(alignment: .center) {
@@ -13,13 +13,15 @@ struct WelcomeView: View {
                 .foregroundColor(GrayScale.White)
                 .multilineTextAlignment(.center)
                 .padding(.bottom, 16)
+                .lineSpacing(8)
             Text("To start playing, you need to scan the QR \n code on the web version of Cloud Poker Night")
                 .font(Typography.Body_1_Gilroy_Regular_16px_20)
                 .foregroundColor(GrayScale.White)
                 .multilineTextAlignment(.center)
                 .lineLimit(20)
+                .lineSpacing(8)
             Button("start scanning") {
-                router.scanQrCode()
+                viewModel.goToQRCodeScanner()
             }
             .buttonStyle(GoldButton())
             .padding(.top, 32)

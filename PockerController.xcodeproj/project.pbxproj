@@ -65,6 +65,16 @@
 		1094008529A50DAB00358EE8 /* WSSubscribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094008429A50DAB00358EE8 /* WSSubscribe.swift */; };
 		1094008729A50DB900358EE8 /* WSTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094008629A50DB900358EE8 /* WSTrigger.swift */; };
 		10A1FFD929A739B900CB08ED /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFD829A739B900CB08ED /* QRCodeViewController.swift */; };
+		10A1FFDB29A874EE00CB08ED /* RoomJoingToTheGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFDA29A874EE00CB08ED /* RoomJoingToTheGameView.swift */; };
+		10A1FFDE29A8794D00CB08ED /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFDD29A8794D00CB08ED /* WelcomeViewModel.swift */; };
+		10A1FFE129A87AD000CB08ED /* QrCodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE029A87AD000CB08ED /* QrCodeScannerViewModel.swift */; };
+		10A1FFE329A87D9000CB08ED /* WelcomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE229A87D9000CB08ED /* WelcomeAssembly.swift */; };
+		10A1FFE529A87E8400CB08ED /* QRCodeScannerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE429A87E8400CB08ED /* QRCodeScannerAssembly.swift */; };
+		10A1FFE829A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE729A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift */; };
+		10A1FFEA29A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE929A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift */; };
+		10A1FFEC29A8AA5F00CB08ED /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFEB29A8AA5F00CB08ED /* Spinner.swift */; };
+		10A1FFEE29A8D0E600CB08ED /* Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFED29A8D0E600CB08ED /* Back.swift */; };
+		10A1FFF129AA0B7B00CB08ED /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFF029AA0B7B00CB08ED /* DeviceRotationViewModifier.swift */; };
 		10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA0292299A7C5500A1739F /* PockerControllerApp.swift */; };
 		10BA0297299A7C5600A1739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0296299A7C5600A1739F /* Assets.xcassets */; };
 		10BA029A299A7C5600A1739F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0299299A7C5600A1739F /* Preview Assets.xcassets */; };
@@ -174,6 +184,16 @@
 		1094008429A50DAB00358EE8 /* WSSubscribe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSSubscribe.swift; sourceTree = "<group>"; };
 		1094008629A50DB900358EE8 /* WSTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSTrigger.swift; sourceTree = "<group>"; };
 		10A1FFD829A739B900CB08ED /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		10A1FFDA29A874EE00CB08ED /* RoomJoingToTheGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomJoingToTheGameView.swift; sourceTree = "<group>"; };
+		10A1FFDD29A8794D00CB08ED /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		10A1FFE029A87AD000CB08ED /* QrCodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerViewModel.swift; sourceTree = "<group>"; };
+		10A1FFE229A87D9000CB08ED /* WelcomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAssembly.swift; sourceTree = "<group>"; };
+		10A1FFE429A87E8400CB08ED /* QRCodeScannerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerAssembly.swift; sourceTree = "<group>"; };
+		10A1FFE729A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomJoingToTheGameViewModel.swift; sourceTree = "<group>"; };
+		10A1FFE929A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomJoingToTheGameAssambly.swift; sourceTree = "<group>"; };
+		10A1FFEB29A8AA5F00CB08ED /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		10A1FFED29A8D0E600CB08ED /* Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back.swift; sourceTree = "<group>"; };
+		10A1FFF029AA0B7B00CB08ED /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
 		10BA028F299A7C5500A1739F /* PockerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA0292299A7C5500A1739F /* PockerControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerApp.swift; sourceTree = "<group>"; };
 		10BA0296299A7C5600A1739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -324,12 +344,43 @@
 			path = Websocket;
 			sourceTree = "<group>";
 		};
-		10A1FFD729A739A000CB08ED /* Controllers */ = {
+		10A1FFDC29A8792C00CB08ED /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				10BA02D029A0ACCD00A1739F /* WelcomeView.swift */,
+				10A1FFDD29A8794D00CB08ED /* WelcomeViewModel.swift */,
+				10A1FFE229A87D9000CB08ED /* WelcomeAssembly.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		10A1FFDF29A87A8E00CB08ED /* QRCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
 				10A1FFD829A739B900CB08ED /* QRCodeViewController.swift */,
+				10BA02DD29A20BC400A1739F /* QrCodeScannerView.swift */,
+				10A1FFE029A87AD000CB08ED /* QrCodeScannerViewModel.swift */,
+				10A1FFE429A87E8400CB08ED /* QRCodeScannerAssembly.swift */,
 			);
-			path = Controllers;
+			path = QRCodeScanner;
+			sourceTree = "<group>";
+		};
+		10A1FFE629A8805F00CB08ED /* RoomJoingToTheGame */ = {
+			isa = PBXGroup;
+			children = (
+				10A1FFDA29A874EE00CB08ED /* RoomJoingToTheGameView.swift */,
+				10A1FFE729A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift */,
+				10A1FFE929A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift */,
+			);
+			path = RoomJoingToTheGame;
+			sourceTree = "<group>";
+		};
+		10A1FFEF29AA0B0C00CB08ED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				10A1FFF029AA0B7B00CB08ED /* DeviceRotationViewModifier.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		10BA0286299A7C5500A1739F = {
@@ -357,6 +408,7 @@
 		10BA0291299A7C5500A1739F /* PockerController */ = {
 			isa = PBXGroup;
 			children = (
+				10A1FFEF29AA0B0C00CB08ED /* Services */,
 				1094007E29A5086300358EE8 /* Worker */,
 				10BA02DF29A20E6200A1739F /* Router */,
 				10BA02D229A0B1C500A1739F /* Models */,
@@ -398,7 +450,6 @@
 		10BA02BC299A803100A1739F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				10A1FFD729A739A000CB08ED /* Controllers */,
 				10BA02BE299A808D00A1739F /* Screens */,
 				10BA02BD299A807F00A1739F /* Components */,
 			);
@@ -410,6 +461,7 @@
 			children = (
 				10BA02D829A1E0EF00A1739F /* Buttons */,
 				10BA02DB29A1F1B700A1739F /* BackgroundClearView.swift */,
+				10A1FFEB29A8AA5F00CB08ED /* Spinner.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -417,9 +469,10 @@
 		10BA02BE299A808D00A1739F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				10A1FFE629A8805F00CB08ED /* RoomJoingToTheGame */,
+				10A1FFDF29A87A8E00CB08ED /* QRCodeScanner */,
+				10A1FFDC29A8792C00CB08ED /* Welcome */,
 				10BA02CE299D1A8C00A1739F /* SplashView.swift */,
-				10BA02D029A0ACCD00A1739F /* WelcomeView.swift */,
-				10BA02DD29A20BC400A1739F /* QrCodeScannerView.swift */,
 				10BA02F029A227E900A1739F /* WaitingRoomView.swift */,
 				10BA02F229A227FA00A1739F /* GameRoomView.swift */,
 				10BA02F429A2280A00A1739F /* BarRoomView.swift */,
@@ -461,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				10BA02D929A1E15700A1739F /* GoldButton.swift */,
+				10A1FFED29A8D0E600CB08ED /* Back.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -822,20 +876,30 @@
 				10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */,
 				10BA02D529A0B23400A1739F /* ShemeColor.swift in Sources */,
 				10BA02EF29A2143900A1739F /* AuthRoute.swift in Sources */,
+				10A1FFE829A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift in Sources */,
 				10BA02DA29A1E15700A1739F /* GoldButton.swift in Sources */,
+				10A1FFEA29A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift in Sources */,
 				10BA02E329A2113200A1739F /* GuestStack.swift in Sources */,
 				10BA02ED29A2141600A1739F /* GuestRoute.swift in Sources */,
+				10A1FFF129AA0B7B00CB08ED /* DeviceRotationViewModifier.swift in Sources */,
 				1094008129A508BB00358EE8 /* Events.swift in Sources */,
+				10A1FFDB29A874EE00CB08ED /* RoomJoingToTheGameView.swift in Sources */,
+				10A1FFE129A87AD000CB08ED /* QrCodeScannerViewModel.swift in Sources */,
 				1094008729A50DB900358EE8 /* WSTrigger.swift in Sources */,
+				10A1FFE329A87D9000CB08ED /* WelcomeAssembly.swift in Sources */,
+				10A1FFDE29A8794D00CB08ED /* WelcomeViewModel.swift in Sources */,
 				10A1FFD929A739B900CB08ED /* QRCodeViewController.swift in Sources */,
 				10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */,
 				10BA02E529A2114100A1739F /* AuthStack.swift in Sources */,
+				10A1FFEE29A8D0E600CB08ED /* Back.swift in Sources */,
 				10BA02CF299D1A8C00A1739F /* SplashView.swift in Sources */,
 				10BA02DE29A20BC400A1739F /* QrCodeScannerView.swift in Sources */,
 				1094008329A50D6900358EE8 /* WSManager.swift in Sources */,
 				10BA02D129A0ACCD00A1739F /* WelcomeView.swift in Sources */,
 				10BA02E729A211C800A1739F /* AuthRouter.swift in Sources */,
+				10A1FFEC29A8AA5F00CB08ED /* Spinner.swift in Sources */,
 				10BA02DC29A1F1B700A1739F /* BackgroundClearView.swift in Sources */,
+				10A1FFE529A87E8400CB08ED /* QRCodeScannerAssembly.swift in Sources */,
 				10BA02F329A227FA00A1739F /* GameRoomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

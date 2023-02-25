@@ -7,11 +7,15 @@ final class GuestRouter: ObservableObject {
     @Published var path = [GuestRoute]()
     
     func goToWelcome() {
-        path.append(GuestRoute.welcome)
+        path.append(.welcome)
     }
 
     func scanQrCode () {
-        path.append(GuestRoute.qrCode)
+        path.append(.qrCode)
+    }
+    
+    func joingToTheGame(_ qrCode: String) {
+        path.append(.roomJoingToTheGame(qrCode))
     }
     
     func back () {

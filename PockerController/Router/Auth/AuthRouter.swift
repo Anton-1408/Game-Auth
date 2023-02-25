@@ -7,7 +7,7 @@ final class AuthRouter: ObservableObject {
     @Published var path = [AuthRoute]()
     
     func goToTheWaitingRoom() {
-        path.append(AuthRoute.waitingRoom)
+        path.append(.waitingRoom)
     }
     
     func goToTheBarRoom() {
@@ -15,7 +15,7 @@ final class AuthRouter: ObservableObject {
     }
     
     func goToTheGameRoom() {
-        path.append(AuthRoute.gameRoom)
+        path.append(.gameRoom)
     }
     
     func back() {

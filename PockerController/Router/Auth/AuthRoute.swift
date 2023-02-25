@@ -1,6 +1,6 @@
 import Foundation
 
-enum AuthRoute {
+enum AuthRoute: Hashable {
     case waitingRoom
     case gameRoom
     case barRoom
