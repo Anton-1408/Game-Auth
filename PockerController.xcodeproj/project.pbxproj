@@ -75,6 +75,10 @@
 		10A1FFEC29A8AA5F00CB08ED /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFEB29A8AA5F00CB08ED /* Spinner.swift */; };
 		10A1FFEE29A8D0E600CB08ED /* Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFED29A8D0E600CB08ED /* Back.swift */; };
 		10A1FFF129AA0B7B00CB08ED /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFF029AA0B7B00CB08ED /* DeviceRotationViewModifier.swift */; };
+		10A1FFF329AA4D0C00CB08ED /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFF229AA4D0C00CB08ED /* ResponseData.swift */; };
+		10A1FFF529AA5C4700CB08ED /* RequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFF429AA5C4700CB08ED /* RequestParams.swift */; };
+		10A1FFF929AA625C00CB08ED /* PokerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFF829AA625C00CB08ED /* PokerApi.swift */; };
+		10A1FFFF29AB388300CB08ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFFE29AB388300CB08ED /* Constants.swift */; };
 		10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA0292299A7C5500A1739F /* PockerControllerApp.swift */; };
 		10BA0297299A7C5600A1739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0296299A7C5600A1739F /* Assets.xcassets */; };
 		10BA029A299A7C5600A1739F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0299299A7C5600A1739F /* Preview Assets.xcassets */; };
@@ -194,6 +198,11 @@
 		10A1FFEB29A8AA5F00CB08ED /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		10A1FFED29A8D0E600CB08ED /* Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back.swift; sourceTree = "<group>"; };
 		10A1FFF029AA0B7B00CB08ED /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
+		10A1FFF229AA4D0C00CB08ED /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		10A1FFF429AA5C4700CB08ED /* RequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParams.swift; sourceTree = "<group>"; };
+		10A1FFF829AA625C00CB08ED /* PokerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerApi.swift; sourceTree = "<group>"; };
+		10A1FFFD29AB373B00CB08ED /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		10A1FFFE29AB388300CB08ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		10BA028F299A7C5500A1739F /* PockerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA0292299A7C5500A1739F /* PockerControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerApp.swift; sourceTree = "<group>"; };
 		10BA0296299A7C5600A1739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -378,9 +387,18 @@
 		10A1FFEF29AA0B0C00CB08ED /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				10A1FFF029AA0B7B00CB08ED /* DeviceRotationViewModifier.swift */,
+				10A1FFF829AA625C00CB08ED /* PokerApi.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		10A1FFF629AA621400CB08ED /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				10A1FFF029AA0B7B00CB08ED /* DeviceRotationViewModifier.swift */,
+				10BA02DB29A1F1B700A1739F /* BackgroundClearView.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		10BA0286299A7C5500A1739F = {
@@ -408,6 +426,7 @@
 		10BA0291299A7C5500A1739F /* PockerController */ = {
 			isa = PBXGroup;
 			children = (
+				10A1FFFD29AB373B00CB08ED /* Secrets.xcconfig */,
 				10A1FFEF29AA0B0C00CB08ED /* Services */,
 				1094007E29A5086300358EE8 /* Worker */,
 				10BA02DF29A20E6200A1739F /* Router */,
@@ -450,6 +469,7 @@
 		10BA02BC299A803100A1739F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				10A1FFF629AA621400CB08ED /* Core */,
 				10BA02BE299A808D00A1739F /* Screens */,
 				10BA02BD299A807F00A1739F /* Components */,
 			);
@@ -460,7 +480,6 @@
 			isa = PBXGroup;
 			children = (
 				10BA02D829A1E0EF00A1739F /* Buttons */,
-				10BA02DB29A1F1B700A1739F /* BackgroundClearView.swift */,
 				10A1FFEB29A8AA5F00CB08ED /* Spinner.swift */,
 			);
 			path = Components;
@@ -487,6 +506,7 @@
 				10BA02C0299A818800A1739F /* Fonts */,
 				10BA02D429A0B23400A1739F /* ShemeColor.swift */,
 				10BA02D629A10C0700A1739F /* Typography.swift */,
+				10A1FFFE29AB388300CB08ED /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -506,6 +526,8 @@
 		10BA02D229A0B1C500A1739F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				10A1FFF229AA4D0C00CB08ED /* ResponseData.swift */,
+				10A1FFF429AA5C4700CB08ED /* RequestParams.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -876,6 +898,8 @@
 				10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */,
 				10BA02D529A0B23400A1739F /* ShemeColor.swift in Sources */,
 				10BA02EF29A2143900A1739F /* AuthRoute.swift in Sources */,
+				10A1FFF929AA625C00CB08ED /* PokerApi.swift in Sources */,
+				10A1FFF329AA4D0C00CB08ED /* ResponseData.swift in Sources */,
 				10A1FFE829A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift in Sources */,
 				10BA02DA29A1E15700A1739F /* GoldButton.swift in Sources */,
 				10A1FFEA29A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift in Sources */,
@@ -892,6 +916,7 @@
 				10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */,
 				10BA02E529A2114100A1739F /* AuthStack.swift in Sources */,
 				10A1FFEE29A8D0E600CB08ED /* Back.swift in Sources */,
+				10A1FFF529AA5C4700CB08ED /* RequestParams.swift in Sources */,
 				10BA02CF299D1A8C00A1739F /* SplashView.swift in Sources */,
 				10BA02DE29A20BC400A1739F /* QrCodeScannerView.swift in Sources */,
 				1094008329A50D6900358EE8 /* WSManager.swift in Sources */,
@@ -900,6 +925,7 @@
 				10A1FFEC29A8AA5F00CB08ED /* Spinner.swift in Sources */,
 				10BA02DC29A1F1B700A1739F /* BackgroundClearView.swift in Sources */,
 				10A1FFE529A87E8400CB08ED /* QRCodeScannerAssembly.swift in Sources */,
+				10A1FFFF29AB388300CB08ED /* Constants.swift in Sources */,
 				10BA02F329A227FA00A1739F /* GameRoomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -939,6 +965,7 @@
 /* Begin XCBuildConfiguration section */
 		10BA02B1299A7C5700A1739F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A1FFFD29AB373B00CB08ED /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1000,6 +1027,7 @@
 		};
 		10BA02B2299A7C5700A1739F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A1FFFD29AB373B00CB08ED /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

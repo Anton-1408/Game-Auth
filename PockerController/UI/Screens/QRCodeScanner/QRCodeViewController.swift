@@ -22,22 +22,14 @@ class QRCodeScannerController: UIViewController {
         button.setImage(icon, for: .normal)
         button.sizeToFit()
         button.imageView?.contentMode = .scaleAspectFit
-        
         button.addTarget(self, action: #selector(goBack), for: .touchUpInside)
         
         return button
     }()
-    
-    private lazy var wrapView: UIView = {
-        let wrapView = UIView()
-
-        wrapView.translatesAutoresizingMaskIntoConstraints = false
-        
-        return wrapView;
-    }()
 
     private lazy var flashButton: UIButton = {
         var configuration = UIButton.Configuration.plain()
+        
         configuration.imagePlacement = .trailing
         
         let button = UIButton(configuration: configuration)
@@ -47,7 +39,6 @@ class QRCodeScannerController: UIViewController {
         button.imageView?.contentMode = .scaleAspectFit
         button.setImage(flashOn, for: .normal)
         button.sizeToFit()
-        
         button.addTarget(self, action: #selector(tapFlashButton), for: .touchUpInside)
         
         return button;
@@ -55,10 +46,9 @@ class QRCodeScannerController: UIViewController {
     
     private lazy var qrScannerView: QRScannerView = {
         let qrScannerView = QRScannerView(frame: view.bounds)
-        qrScannerView.focusImage = UIImage(named: "FrameScanner")
         
+        qrScannerView.focusImage = UIImage(named: "FrameScanner")
         qrScannerView.configure(delegate: coordinator!)
-        qrScannerView.startRunning()
         
         return qrScannerView;
     }()
@@ -70,13 +60,12 @@ class QRCodeScannerController: UIViewController {
         stack.distribution = .equalSpacing
         stack.alignment = .fill
 
-
         stack.addArrangedSubview(cancelButton)
         stack.addArrangedSubview(flashButton)
 
         stack.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 0, right: 20)
         stack.isLayoutMarginsRelativeArrangement = true
-        
+
         stack.translatesAutoresizingMaskIntoConstraints = false
         
         return stack
@@ -115,36 +104,22 @@ class QRCodeScannerController: UIViewController {
         super.viewDidLoad()
 
         getCameraPermissions()
-        
-        view.backgroundColor = .black
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-
-        wrapView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let views : [String:Any] = ["wrapView":wrapView]
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[wrapView]-|", options: [], metrics: nil, views: views))
-        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[wrapView]-|", options: [], metrics: nil, views: views))
-        
-        
-        NSLayoutConstraint.activate([
-            viewButtons.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0.0),
-            viewButtons.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0.0),
-        ])
     }
     
     private func getCameraPermissions() {
+        view.backgroundColor = UIColor(GrayScale.Black)
+        
         switch AVCaptureDevice.authorizationStatus(for: .video) {
             case .authorized:
                 startQrCodeScanner()
             case .notDetermined:
-                AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+                AVCaptureDevice.requestAccess(for: .video) { granted in
                     if granted {
-                        DispatchQueue.main.async { [weak self] in
-                            self?.startQrCodeScanner()
+                        DispatchQueue.main.async {
+                            self.startQrCodeScanner()
                         }
+                    } else {
+                        self.goBack()
                     }
                 }
             default:
@@ -165,8 +140,16 @@ class QRCodeScannerController: UIViewController {
     }
     
     private func startQrCodeScanner() {
-        view.addSubview(qrScannerView)
-        view.addSubview(wrapView)
-        wrapView.addSubview(viewButtons)
+        self.view.backgroundColor = .black
+        
+        self.view.addSubview(qrScannerView)
+        self.qrScannerView.addSubview(viewButtons)
+        
+         NSLayoutConstraint.activate([
+           viewButtons.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 0.0),
+           viewButtons.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: 0.0),
+         ])
+        
+        self.qrScannerView.startRunning()
     }
 }
