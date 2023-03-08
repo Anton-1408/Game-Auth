@@ -105,11 +105,11 @@ struct Player: Decodable, Identifiable {
     var position: Int
     var tablePosition: Int
     var tentativeAction: String?
-    var timebank: Int
+    var timebank: Int?
     var wallet: Int
-    var fold: Bool
-    var prevPot: Int
-    var pot: Int
+    var fold: Bool?
+    var prevPot: Int?
+    var pot: Int?
 }
 
 struct Error: Decodable {

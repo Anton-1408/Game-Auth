@@ -80,6 +80,7 @@
 		10AEBF6E29B8285300439B51 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF6D29B8285300439B51 /* AppState.swift */; };
 		10AEBF7029B8286700439B51 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF6F29B8286700439B51 /* Reducer.swift */; };
 		10AEBF7229B8287800439B51 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF7129B8287800439B51 /* Store.swift */; };
+		10AEBF7629B857F000439B51 /* QRCodeScannerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */; };
 		10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA0292299A7C5500A1739F /* PockerControllerApp.swift */; };
 		10BA0297299A7C5600A1739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0296299A7C5600A1739F /* Assets.xcassets */; };
 		10BA029A299A7C5600A1739F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0299299A7C5600A1739F /* Preview Assets.xcassets */; };
@@ -205,6 +206,7 @@
 		10AEBF6D29B8285300439B51 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		10AEBF6F29B8286700439B51 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		10AEBF7129B8287800439B51 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerWorker.swift; sourceTree = "<group>"; };
 		10BA028F299A7C5500A1739F /* PockerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA0292299A7C5500A1739F /* PockerControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerApp.swift; sourceTree = "<group>"; };
 		10BA0296299A7C5600A1739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 		1094007E29A5086300358EE8 /* Worker */ = {
 			isa = PBXGroup;
 			children = (
+				10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -909,6 +912,7 @@
 				10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */,
 				10BA02D529A0B23400A1739F /* ShemeColor.swift in Sources */,
 				10BA02EF29A2143900A1739F /* AuthRoute.swift in Sources */,
+				10AEBF7629B857F000439B51 /* QRCodeScannerWorker.swift in Sources */,
 				10A1FFF929AA625C00CB08ED /* Api.swift in Sources */,
 				10A1FFF329AA4D0C00CB08ED /* ResponseData.swift in Sources */,
 				10A1FFE829A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift in Sources */,
