@@ -9,11 +9,11 @@ import Foundation
 
 struct QRCodeScanParams: Encodable {
     var deviceInformation: DeviceInformation
-    
-    struct DeviceInformation: Encodable {
-      var deviceName: String
-      var deviceOS: String
-      var deviceModel: String
-      var deviceVersion: String
-    }
+}
+
+struct DeviceInformation: Encodable {
+  var deviceName: String
+  var deviceOS: String
+  var deviceModel: String
+  var deviceVersion: String
 }

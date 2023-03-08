@@ -4,6 +4,8 @@ import SwiftUI
 struct RoomJoingToTheGameView: View {
     @ObservedObject var viewModel: RoomJoingToTheGameViewModel;
     
+    @EnvironmentObject var store: Store
+    
     @State private var isLoading = true
     @State private var isPortrait = UIDevice.current.orientation.isPortrait
 
@@ -40,10 +42,35 @@ struct RoomJoingToTheGameView: View {
            await viewModel.sendQrCode(
             deviceModel: UIDevice.current.model,
             deviceVersion: UIDevice.current.systemVersion,
-            deviceName: UIDevice.current.name
+            deviceName: UIDevice.current.name,
+            handleError: {error in
+                print("Error", error)
+            },
+            handleSuccess: {result in
+                let authToken = result.authToken.access
+                let userId = result.user.id
+                let userName = result.user.name
+                
+                isLoading = false
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    store.dispath(.setAuthToken(
+                        .init(
+                            expires: authToken.expires,
+                            token: authToken.token
+                        )
+                    ))
+                    store.dispath(.setUser(
+                        .init(
+                            id: userId,
+                            name: userName
+                        )
+                    ))
+                }
+            }
           )
         }
-        .onRotate {isPortrait in
+        .onRotate { isPortrait in
             self.isPortrait = isPortrait
         }
     }

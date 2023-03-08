@@ -52,5 +52,128 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19AA91E5-E6D3-44C5-B41B-AE2160724497"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PockerController/Router/RootStack.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "RootStack"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "19AA91E5-E6D3-44C5-B41B-AE2160724497 - 1c3ed963887ec8d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of PockerController.RootStack.store : PockerController.Store"
+                  moduleName = "PockerController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonvotinov/projects/mobiles/PockerController/PockerController/Router/RootStack.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "19AA91E5-E6D3-44C5-B41B-AE2160724497 - a54c5669ffcebdeb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PockerController.RootStack.store.getter : PockerController.Store"
+                  moduleName = "PockerController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonvotinov/projects/mobiles/PockerController/PockerController/Router/RootStack.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "19AA91E5-E6D3-44C5-B41B-AE2160724497 - faf37c6687044df3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PockerController.RootStack.store.setter : PockerController.Store"
+                  moduleName = "PockerController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonvotinov/projects/mobiles/PockerController/PockerController/Router/RootStack.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "19AA91E5-E6D3-44C5-B41B-AE2160724497 - 6c00a582f26bd195"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PockerController.RootStack.store.modify : PockerController.Store"
+                  moduleName = "PockerController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonvotinov/projects/mobiles/PockerController/PockerController/Router/RootStack.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "19AA91E5-E6D3-44C5-B41B-AE2160724497 - bdcf060dc3b66541"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PockerController.RootStack.store.modify : PockerController.Store with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "PockerController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonvotinov/projects/mobiles/PockerController/PockerController/Router/RootStack.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "19AA91E5-E6D3-44C5-B41B-AE2160724497 - c245e96d8199b8c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PockerController.RootStack.$store.getter : SwiftUI.ObservedObject&lt;PockerController.Store&gt;.Wrapper"
+                  moduleName = "PockerController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonvotinov/projects/mobiles/PockerController/PockerController/Router/RootStack.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "19AA91E5-E6D3-44C5-B41B-AE2160724497 - 24b390f823b29694"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PockerController.RootStack.init() -&gt; PockerController.RootStack"
+                  moduleName = "PockerController"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonvotinov/projects/mobiles/PockerController/PockerController/Router/RootStack.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -11,36 +11,30 @@ final class RoomJoingToTheGameViewModel: ObservableObject {
     @Published var qrCodeData: String;
 
     private let router: GuestRouter
-    private let api: PokerApi
+    private let api: Api
     
     init(qrCodeData: String, router: GuestRouter) {
         self.qrCodeData = qrCodeData
         self.router = router
-        self.api = PokerApi.getInstance()
+        self.api = Api.getInstance()
     }
     
     public func goToWelcomeScreen() {
         router.goToRoot()
     }
     
-    public func sendQrCode(deviceModel: String, deviceVersion: String, deviceName: String) async {
-        let deviceOS = "IOS";
-        
+    public func sendQrCode(deviceModel: String, deviceVersion: String, deviceName: String, handleError: @escaping (_ error: Error) -> Void, handleSuccess: @escaping (_ result: Response) -> Void) async {
         await self.api.scanQRCode(
             token: qrCodeData,
             deviceInformation: .init(
             deviceInformation: .init(
                deviceName: deviceName,
-               deviceOS: deviceOS,
+               deviceOS: "IOS",
                deviceModel: deviceModel,
                deviceVersion: deviceVersion
             )),
-            handleError: {error in
-              print("error", error)
-            },
-            handleSuccess: {success in
-               print("success", success)
-            }
+            handleError: handleError,
+            handleSuccess: handleSuccess
         )
     }
 }

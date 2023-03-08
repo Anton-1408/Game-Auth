@@ -2,10 +2,10 @@ import Foundation
 import SwiftUI
 
 struct RootStack: View {
-    private let isAuth = false
+    @ObservedObject private var store = Store.getStore()
     
     var body: some View {
-        if (isAuth) {
+        if (store.state.authToken != nil) {
             AuthStack()
         } else {
             GuestStack()

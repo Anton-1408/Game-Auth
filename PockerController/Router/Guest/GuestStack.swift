@@ -3,6 +3,7 @@ import SwiftUI
 
 struct GuestStack: View {
     @ObservedObject var router = GuestRouter.shared;
+    @StateObject var store = Store.getStore()
 
     var body: some View {
         NavigationStack(path: $router.path) {
@@ -19,7 +20,8 @@ struct GuestStack: View {
                                 RoomJoingToTheGameAssambly().build(for: qrCodeData)
                                    .navigationBarHidden(true)
                     }
-                }
+            }
         }
+        .environmentObject(store)
     }
 }

@@ -7,8 +7,8 @@
 
 import Foundation
 
-class PokerApi {
-    private static var instance: PokerApi?
+class Api {
+    private static var instance: Api?
 
     var authToken: String?
     
@@ -26,9 +26,9 @@ class PokerApi {
         }
     }
     
-    public static func getInstance() -> PokerApi {
+    public static func getInstance() -> Api {
         if (instance == nil) {
-            instance = PokerApi()
+            instance = Api()
         }
         
         return instance!
