@@ -69,6 +69,7 @@ struct GameData: Identifiable, Decodable {
     var updatedAt: String
     var usedCards: Array<String>
     var waitingPlayers: Array<Player>
+    var bigBlindPosition: Int?
 }
 
 struct UserData: Decodable, Identifiable {

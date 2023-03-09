@@ -16,8 +16,9 @@ struct AppState {
     var isCardOpened: Bool
     var dailyTalkController: DailyTalkController
     var isGameLoaded: Bool
-    var playersWaiting: [PlayersOfWaiting]
+    var playersWaiting: [PlayerOfWaiting]
     var oneToOneCall: OneToOneCall
+    var playerFoldMaked: Bool
 }
 
 struct Auth {
@@ -28,14 +29,14 @@ struct Auth {
 struct Game: Identifiable {
     var id: String?
     var isGameStarted: Bool
-    var lastAction: String?
+    var lastAction: LastAction?
     var isGameOver: Bool
     var bigBlind: Int
     var smallBlind: Int
     var raiseAmount: Int
     var pot: Int
-    var smallBlindPosition: Int
-    var bigBlindPosition: Int
+    var smallBlindPosition: Int?
+    var bigBlindPosition: Int?
     var runninground: Int
     var finish: Bool
     var pause: Bool
@@ -48,7 +49,7 @@ struct User: Identifiable {
 
 struct DailyTalkController {
     var isAudio: Bool
-    var isVideo: Bool
+    var isCamera: Bool
 }
 
 struct InformationCall {
@@ -87,7 +88,7 @@ struct PlayersOfGame: Identifiable {
     var pot: Int
 }
 
-struct PlayersOfWaiting: Identifiable {
+struct PlayerOfWaiting: Identifiable {
     var action: String?
     var actionType: String?
     var avatar: String

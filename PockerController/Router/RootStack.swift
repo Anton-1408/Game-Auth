@@ -5,7 +5,7 @@ struct RootStack: View {
     @ObservedObject private var store = Store.getStore()
     
     var body: some View {
-        if (store.state.authToken != nil) {
+        if (hasAuth(store.state)) {
             AuthStack()
         } else {
             GuestStack()
