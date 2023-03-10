@@ -17,7 +17,7 @@ struct GuestStack: View {
                                     .navigationBarHidden(true)
                                     .ignoresSafeArea(.all)
                         case .roomJoingToTheGame(let qrCodeData):
-                                RoomJoingToTheGameAssambly().build(for: qrCodeData)
+                                RoomJoingToTheGameAssembly().build(for: qrCodeData)
                                    .navigationBarHidden(true)
                     }
             }

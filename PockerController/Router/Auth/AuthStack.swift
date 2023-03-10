@@ -6,15 +6,18 @@ struct AuthStack: View {
 
     var body: some View {
         NavigationStack(path: $router.path) {
-            WaitingRoomView()
+            WaitingRoomAssembly().build()
                 .navigationDestination(for: AuthRoute.self) { route in
                     switch route {
                         case AuthRoute.gameRoom:
-                              GameRoomView()
+                            GameRoomAssembly().build()
+                                .navigationBarHidden(true)
                         case AuthRoute.barRoom:
-                            BarRoomView()
+                            BarRoomAssembly().build()
+                                .navigationBarHidden(true)
                         case AuthRoute.waitingRoom:
-                            WaitingRoomView()
+                            WaitingRoomAssembly().build()
+                                .navigationBarHidden(true)
                     }
                 }
         }

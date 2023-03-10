@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class RoomJoingToTheGameAssambly {
+final class RoomJoingToTheGameAssembly {
     func build(for qrCodeData: String) -> RoomJoingToTheGameView {
         let router = GuestRouter.shared
         let viewModel = RoomJoingToTheGameViewModel(qrCodeData: qrCodeData, router: router)

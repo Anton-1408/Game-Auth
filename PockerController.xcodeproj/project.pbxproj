@@ -68,7 +68,7 @@
 		10A1FFE329A87D9000CB08ED /* WelcomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE229A87D9000CB08ED /* WelcomeAssembly.swift */; };
 		10A1FFE529A87E8400CB08ED /* QRCodeScannerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE429A87E8400CB08ED /* QRCodeScannerAssembly.swift */; };
 		10A1FFE829A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE729A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift */; };
-		10A1FFEA29A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE929A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift */; };
+		10A1FFEA29A880CD00CB08ED /* RoomJoingToTheGameAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFE929A880CD00CB08ED /* RoomJoingToTheGameAssembly.swift */; };
 		10A1FFEC29A8AA5F00CB08ED /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFEB29A8AA5F00CB08ED /* Spinner.swift */; };
 		10A1FFEE29A8D0E600CB08ED /* Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFED29A8D0E600CB08ED /* Back.swift */; };
 		10A1FFF129AA0B7B00CB08ED /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFF029AA0B7B00CB08ED /* DeviceRotationViewModifier.swift */; };
@@ -83,6 +83,15 @@
 		10AEBF7629B857F000439B51 /* QRCodeScannerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */; };
 		10AEBF7B29B876B200439B51 /* Selectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF7A29B876B200439B51 /* Selectors.swift */; };
 		10B8261129BA210800A11EA3 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261029BA210800A11EA3 /* Types.swift */; };
+		10B8261329BB7A1100A11EA3 /* WaitingRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */; };
+		10B8261529BB7A3200A11EA3 /* WaitingRoomAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */; };
+		10B8261729BB7C3500A11EA3 /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261629BB7C3500A11EA3 /* WaitingRoomView.swift */; };
+		10B8261929BB7CF900A11EA3 /* BarRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261829BB7CF900A11EA3 /* BarRoomView.swift */; };
+		10B8261B29BB7D0700A11EA3 /* BarRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261A29BB7D0700A11EA3 /* BarRoomViewModel.swift */; };
+		10B8261D29BB7D1900A11EA3 /* BarRoomAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261C29BB7D1900A11EA3 /* BarRoomAssembly.swift */; };
+		10B8261F29BB7E5B00A11EA3 /* GameRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261E29BB7E5B00A11EA3 /* GameRoomView.swift */; };
+		10B8262129BB7E6700A11EA3 /* GameRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8262029BB7E6700A11EA3 /* GameRoomViewModel.swift */; };
+		10B8262329BB7E9A00A11EA3 /* GameRoomAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8262229BB7E9A00A11EA3 /* GameRoomAssembly.swift */; };
 		10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA0292299A7C5500A1739F /* PockerControllerApp.swift */; };
 		10BA0297299A7C5600A1739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0296299A7C5600A1739F /* Assets.xcassets */; };
 		10BA029A299A7C5600A1739F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0299299A7C5600A1739F /* Preview Assets.xcassets */; };
@@ -107,9 +116,6 @@
 		10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02E829A211D600A1739F /* GuestRouter.swift */; };
 		10BA02ED29A2141600A1739F /* GuestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02EC29A2141600A1739F /* GuestRoute.swift */; };
 		10BA02EF29A2143900A1739F /* AuthRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02EE29A2143900A1739F /* AuthRoute.swift */; };
-		10BA02F129A227E900A1739F /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02F029A227E900A1739F /* WaitingRoomView.swift */; };
-		10BA02F329A227FA00A1739F /* GameRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02F229A227FA00A1739F /* GameRoomView.swift */; };
-		10BA02F529A2280A00A1739F /* BarRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02F429A2280A00A1739F /* BarRoomView.swift */; };
 		10BA02F729A2298A00A1739F /* RootStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA02F629A2298A00A1739F /* RootStack.swift */; };
 		35BE8919A3A0A136F9E18696 /* Pods_PockerControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170B172154BEAEEB4F640FAB /* Pods_PockerControllerTests.framework */; };
 		3DFCD74AF6029C5D040B70C5 /* Pods_PockerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F8887A22F73BCEB693934E /* Pods_PockerController.framework */; };
@@ -195,7 +201,7 @@
 		10A1FFE229A87D9000CB08ED /* WelcomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAssembly.swift; sourceTree = "<group>"; };
 		10A1FFE429A87E8400CB08ED /* QRCodeScannerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerAssembly.swift; sourceTree = "<group>"; };
 		10A1FFE729A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomJoingToTheGameViewModel.swift; sourceTree = "<group>"; };
-		10A1FFE929A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomJoingToTheGameAssambly.swift; sourceTree = "<group>"; };
+		10A1FFE929A880CD00CB08ED /* RoomJoingToTheGameAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomJoingToTheGameAssembly.swift; sourceTree = "<group>"; };
 		10A1FFEB29A8AA5F00CB08ED /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		10A1FFED29A8D0E600CB08ED /* Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back.swift; sourceTree = "<group>"; };
 		10A1FFF029AA0B7B00CB08ED /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
@@ -211,6 +217,15 @@
 		10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerWorker.swift; sourceTree = "<group>"; };
 		10AEBF7A29B876B200439B51 /* Selectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selectors.swift; sourceTree = "<group>"; };
 		10B8261029BA210800A11EA3 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomViewModel.swift; sourceTree = "<group>"; };
+		10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomAssembly.swift; sourceTree = "<group>"; };
+		10B8261629BB7C3500A11EA3 /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
+		10B8261829BB7CF900A11EA3 /* BarRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarRoomView.swift; sourceTree = "<group>"; };
+		10B8261A29BB7D0700A11EA3 /* BarRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarRoomViewModel.swift; sourceTree = "<group>"; };
+		10B8261C29BB7D1900A11EA3 /* BarRoomAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarRoomAssembly.swift; sourceTree = "<group>"; };
+		10B8261E29BB7E5B00A11EA3 /* GameRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoomView.swift; sourceTree = "<group>"; };
+		10B8262029BB7E6700A11EA3 /* GameRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoomViewModel.swift; sourceTree = "<group>"; };
+		10B8262229BB7E9A00A11EA3 /* GameRoomAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoomAssembly.swift; sourceTree = "<group>"; };
 		10BA028F299A7C5500A1739F /* PockerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA0292299A7C5500A1739F /* PockerControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerApp.swift; sourceTree = "<group>"; };
 		10BA0296299A7C5600A1739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -239,9 +254,6 @@
 		10BA02E829A211D600A1739F /* GuestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestRouter.swift; sourceTree = "<group>"; };
 		10BA02EC29A2141600A1739F /* GuestRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestRoute.swift; sourceTree = "<group>"; };
 		10BA02EE29A2143900A1739F /* AuthRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRoute.swift; sourceTree = "<group>"; };
-		10BA02F029A227E900A1739F /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
-		10BA02F229A227FA00A1739F /* GameRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoomView.swift; sourceTree = "<group>"; };
-		10BA02F429A2280A00A1739F /* BarRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarRoomView.swift; sourceTree = "<group>"; };
 		10BA02F629A2298A00A1739F /* RootStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStack.swift; sourceTree = "<group>"; };
 		170B172154BEAEEB4F640FAB /* Pods_PockerControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PockerControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1A064D3B14B88FF7873DA3 /* Pods-PockerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PockerController.debug.xcconfig"; path = "Target Support Files/Pods-PockerController/Pods-PockerController.debug.xcconfig"; sourceTree = "<group>"; };
@@ -384,7 +396,7 @@
 			children = (
 				10A1FFDA29A874EE00CB08ED /* RoomJoingToTheGameView.swift */,
 				10A1FFE729A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift */,
-				10A1FFE929A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift */,
+				10A1FFE929A880CD00CB08ED /* RoomJoingToTheGameAssembly.swift */,
 			);
 			path = RoomJoingToTheGame;
 			sourceTree = "<group>";
@@ -423,7 +435,9 @@
 		10AEBF7729B86EDE00439B51 /* WaitingRoom */ = {
 			isa = PBXGroup;
 			children = (
-				10BA02F029A227E900A1739F /* WaitingRoomView.swift */,
+				10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */,
+				10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */,
+				10B8261629BB7C3500A11EA3 /* WaitingRoomView.swift */,
 			);
 			path = WaitingRoom;
 			sourceTree = "<group>";
@@ -431,7 +445,9 @@
 		10AEBF7829B86EF000439B51 /* GameRoom */ = {
 			isa = PBXGroup;
 			children = (
-				10BA02F229A227FA00A1739F /* GameRoomView.swift */,
+				10B8261E29BB7E5B00A11EA3 /* GameRoomView.swift */,
+				10B8262029BB7E6700A11EA3 /* GameRoomViewModel.swift */,
+				10B8262229BB7E9A00A11EA3 /* GameRoomAssembly.swift */,
 			);
 			path = GameRoom;
 			sourceTree = "<group>";
@@ -439,7 +455,9 @@
 		10AEBF7929B86EFF00439B51 /* BarRoom */ = {
 			isa = PBXGroup;
 			children = (
-				10BA02F429A2280A00A1739F /* BarRoomView.swift */,
+				10B8261829BB7CF900A11EA3 /* BarRoomView.swift */,
+				10B8261A29BB7D0700A11EA3 /* BarRoomViewModel.swift */,
+				10B8261C29BB7D1900A11EA3 /* BarRoomAssembly.swift */,
 			);
 			path = BarRoom;
 			sourceTree = "<group>";
@@ -934,20 +952,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B8261729BB7C3500A11EA3 /* WaitingRoomView.swift in Sources */,
+				10B8261929BB7CF900A11EA3 /* BarRoomView.swift in Sources */,
 				10AEBF6C29B8283C00439B51 /* Action.swift in Sources */,
 				10BA02F729A2298A00A1739F /* RootStack.swift in Sources */,
-				10BA02F529A2280A00A1739F /* BarRoomView.swift in Sources */,
-				10BA02F129A227E900A1739F /* WaitingRoomView.swift in Sources */,
 				10BA02D729A10C0700A1739F /* Typography.swift in Sources */,
 				10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */,
+				10B8261F29BB7E5B00A11EA3 /* GameRoomView.swift in Sources */,
 				10BA02D529A0B23400A1739F /* ShemeColor.swift in Sources */,
+				10B8261D29BB7D1900A11EA3 /* BarRoomAssembly.swift in Sources */,
+				10B8261329BB7A1100A11EA3 /* WaitingRoomViewModel.swift in Sources */,
 				10BA02EF29A2143900A1739F /* AuthRoute.swift in Sources */,
 				10AEBF7629B857F000439B51 /* QRCodeScannerWorker.swift in Sources */,
+				10B8261529BB7A3200A11EA3 /* WaitingRoomAssembly.swift in Sources */,
 				10A1FFF929AA625C00CB08ED /* Api.swift in Sources */,
 				10A1FFF329AA4D0C00CB08ED /* ResponseData.swift in Sources */,
 				10A1FFE829A880AD00CB08ED /* RoomJoingToTheGameViewModel.swift in Sources */,
 				10BA02DA29A1E15700A1739F /* GoldButton.swift in Sources */,
-				10A1FFEA29A880CD00CB08ED /* RoomJoingToTheGameAssambly.swift in Sources */,
+				10A1FFEA29A880CD00CB08ED /* RoomJoingToTheGameAssembly.swift in Sources */,
 				10AEBF7B29B876B200439B51 /* Selectors.swift in Sources */,
 				10BA02E329A2113200A1739F /* GuestStack.swift in Sources */,
 				10BA02ED29A2141600A1739F /* GuestRoute.swift in Sources */,
@@ -955,14 +977,17 @@
 				1094008129A508BB00358EE8 /* Events.swift in Sources */,
 				10AEBF7029B8286700439B51 /* Reducer.swift in Sources */,
 				10A1FFDB29A874EE00CB08ED /* RoomJoingToTheGameView.swift in Sources */,
+				10B8262129BB7E6700A11EA3 /* GameRoomViewModel.swift in Sources */,
 				10A1FFE129A87AD000CB08ED /* QrCodeScannerViewModel.swift in Sources */,
 				10A1FFE329A87D9000CB08ED /* WelcomeAssembly.swift in Sources */,
 				10A1FFDE29A8794D00CB08ED /* WelcomeViewModel.swift in Sources */,
 				10A1FFD929A739B900CB08ED /* QRCodeViewController.swift in Sources */,
 				10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */,
+				10B8262329BB7E9A00A11EA3 /* GameRoomAssembly.swift in Sources */,
 				10BA02E529A2114100A1739F /* AuthStack.swift in Sources */,
 				10A1FFEE29A8D0E600CB08ED /* Back.swift in Sources */,
 				10A1FFF529AA5C4700CB08ED /* RequestParams.swift in Sources */,
+				10B8261B29BB7D0700A11EA3 /* BarRoomViewModel.swift in Sources */,
 				10BA02CF299D1A8C00A1739F /* SplashView.swift in Sources */,
 				10BA02DE29A20BC400A1739F /* QrCodeScannerView.swift in Sources */,
 				10BA02D129A0ACCD00A1739F /* WelcomeView.swift in Sources */,
@@ -974,7 +999,6 @@
 				10AEBF6E29B8285300439B51 /* AppState.swift in Sources */,
 				10AEBF7229B8287800439B51 /* Store.swift in Sources */,
 				10A1FFFF29AB388300CB08ED /* Constants.swift in Sources */,
-				10BA02F329A227FA00A1739F /* GameRoomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
