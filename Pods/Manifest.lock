@@ -1,8 +1,14 @@
 PODS:
+  - AlertToast (1.3.9)
   - MercariQRScanner (1.9.0)
 
 DEPENDENCIES:
+  - AlertToast
   - MercariQRScanner (from `https://github.com/Looking4Cache/QRScanner.git`)
+
+SPEC REPOS:
+  trunk:
+    - AlertToast
 
 EXTERNAL SOURCES:
   MercariQRScanner:
@@ -14,8 +20,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Looking4Cache/QRScanner.git
 
 SPEC CHECKSUMS:
+  AlertToast: e8db15da727beff75500bcf33a78cd617f408fa1
   MercariQRScanner: e5aea873969af59b09b4cc411fc1c5b6293dba44
 
-PODFILE CHECKSUM: b86122e5ef58416c47f424fa6b657f57540d2a04
+PODFILE CHECKSUM: 99ae6571d1054295d513e7ab123735dcc1c0af23
 
 COCOAPODS: 1.11.3

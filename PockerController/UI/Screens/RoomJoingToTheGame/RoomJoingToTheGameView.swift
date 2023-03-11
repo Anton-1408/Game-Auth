@@ -1,9 +1,11 @@
 import Foundation
 import SwiftUI
+import AlertToast
 
 struct RoomJoingToTheGameView: View {
     @ObservedObject var viewModel: RoomJoingToTheGameViewModel;
     @StateObject var qrCodeScannerWorker = QRCodeScannerWorker();
+    
     @State var isPortrait = UIDevice.current.orientation.isPortrait
     
     var body: some View {
@@ -35,6 +37,21 @@ struct RoomJoingToTheGameView: View {
                 viewModel.goToWelcomeScreen()
             })
         }
+        .toast(
+            isPresenting: $qrCodeScannerWorker.hasError,
+            alert: {
+                AlertToast(
+                    displayMode: .hud,
+                    type: .image("Alert", GrayScale.White),
+                    title: qrCodeScannerWorker.error?.title,
+                    subTitle: qrCodeScannerWorker.error?.message,
+                    style: .style(backgroundColor: Additional.RedPink)
+                )
+            },
+            completion: {
+                self.viewModel.goToWelcomeScreen()
+            }
+        )
         .task {
             await self.qrCodeScannerWorker.signIn(
                token: self.viewModel.qrCodeData,

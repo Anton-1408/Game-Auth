@@ -7,90 +7,121 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0749EE058FE13B1F5B867BB03750B182 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4B56C9CB2A58226674F240CC8BBC1 /* QRScannerView.swift */; };
-		1D74CB28F30E06A2F073E4A4BD94EA4B /* Pods-PockerController-PockerControllerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7525F15F0ACE057F8B4990C099981EB /* Pods-PockerController-PockerControllerUITests-dummy.m */; };
+		0749EE058FE13B1F5B867BB03750B182 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607135026022ABBFA33A9DCDE07096C3 /* QRScannerView.swift */; };
+		097DCEE67EB02F7A7939FAFBFAE932C2 /* Pods-PockerController-PockerControllerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C233D952A94435EDB1A6A26CDADE0E /* Pods-PockerController-PockerControllerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FB01DCFD55AB52D224446D1BC82255F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		11BEB90CEF2276C65CDFD74A2D44B150 /* Pods-PockerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC3241CE7A2EF4322F5E2233E7C2D28 /* Pods-PockerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3FA64CC0150CC8785A449CD2BA0AE4A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5C3E4CC39E3E51B53B6A01E2D5120F23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66BBFD8AC04281754F19F68CCE8054A4 /* Images.xcassets */; };
-		5F8BBE3B833E4414E4FEC4F278BC20B3 /* QRScannerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABE4E419F519DDF97C79F4F9CFCF40 /* QRScannerError.swift */; };
-		71E4F7E2B4949D159D4827838149E727 /* Pods-PockerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E361C13C8795B28000EA693E058956C /* Pods-PockerController-dummy.m */; };
-		739AC9CF838023985BD92678FC66D6D4 /* Pods-PockerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC3241CE7A2EF4322F5E2233E7C2D28 /* Pods-PockerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481F3BE2185022F134DFD932BBD79A40 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD309BA8599E2E99697D6D41593746D /* BlurView.swift */; };
+		5C3E4CC39E3E51B53B6A01E2D5120F23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133F078D35FE93412081B2F9A79DA905 /* Images.xcassets */; };
+		5C7E1FD0252DFA6033E7E08D5984D7B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5F8BBE3B833E4414E4FEC4F278BC20B3 /* QRScannerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5B9ACA4F8C2FF5E55164C997B996E5 /* QRScannerError.swift */; };
+		6EA08F424ACCD3B0D6222BEF90912961 /* AlertToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 630158CDC49BF83C5AD8E74E4998A0C2 /* AlertToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89068BEF39B046B28FD6DA14201044DE /* AlertToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9446C19BE7B60A704BDFE8C37AD8BA55 /* AlertToast.swift */; };
 		9B252F82E483A6C4B9A0E2424A029C17 /* Pods-PockerControllerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 217943230700C95FF7DB542222F742A3 /* Pods-PockerControllerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FC1ECC73052878AAF1828B000D0315F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A3D8C3EFDD38B6A725C235D08C05F4DA /* Bundle+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE3F1283F84C0EF5234BB575ED84816 /* Bundle+Module.swift */; };
-		BF6B694AA2B8D3B64A9F4ABB24BBA8BD /* MercariQRScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00015A879E594CB6669BD94C8C53C7AF /* MercariQRScanner-dummy.m */; };
-		CB6CA55E19F6E08B7CC05B1CD9F08AA7 /* MercariQRScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B89956AA3619B3688B3A9080D9999C0F /* MercariQRScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3D8C3EFDD38B6A725C235D08C05F4DA /* Bundle+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA0A2E45F52CB435EE8BFE6978CCC3 /* Bundle+Module.swift */; };
+		ABCC96A3F5A122791DAB8A1CFA9BD50D /* AlertToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86920D9F5DCC6146C93203772EC21BEB /* AlertToast-dummy.m */; };
+		AD86936416CD760B15B9501AA7F39422 /* Pods-PockerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E361C13C8795B28000EA693E058956C /* Pods-PockerController-dummy.m */; };
+		BF6B694AA2B8D3B64A9F4ABB24BBA8BD /* MercariQRScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B7293BD72AD015874C6B02FE278319 /* MercariQRScanner-dummy.m */; };
+		C4CBFF81934A7B63F82A7798B8FAF747 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CB6CA55E19F6E08B7CC05B1CD9F08AA7 /* MercariQRScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0689D068F0BCA25A9AD0BF586B9A6B9A /* MercariQRScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE75918F0786809E98E99512119DF8D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F03DAF3B69C23D719BBBD698313437 /* ActivityIndicator.swift */; };
 		E84A5B314AA3FB200C789192220317D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F1C238314453C6D5387BD8C2337CB1E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F5003FEBEAB2431EE9068B663126F4EF /* Pods-PockerController-PockerControllerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7525F15F0ACE057F8B4990C099981EB /* Pods-PockerController-PockerControllerUITests-dummy.m */; };
 		FA268A26754A7C897307E81BB91C592C /* Pods-PockerControllerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F329EACB7A619C3CE46B3FE2D040E4 /* Pods-PockerControllerTests-dummy.m */; };
-		FB4C5FB396BA1ACA7A0135CDFD487E38 /* Pods-PockerController-PockerControllerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C233D952A94435EDB1A6A26CDADE0E /* Pods-PockerController-PockerControllerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		50BE3A09E8344FD16C81661A41D0DBC1 /* PBXContainerItemProxy */ = {
+		0A293347D9AC49497DE5E4575BB885D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F52E6DA0104A4F8C767EF42CAE3D09F4;
-			remoteInfo = MercariQRScanner;
+			remoteGlobalIDString = BD9F52E07CA8CCC9E5112A7D8C1CE821;
+			remoteInfo = AlertToast;
 		};
-		639DE58C18433DCBC9FE8DA91290B1A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F52E6DA0104A4F8C767EF42CAE3D09F4;
-			remoteInfo = MercariQRScanner;
-		};
-		A8DF765949C6E4D978262902B62C2707 /* PBXContainerItemProxy */ = {
+		23929C0D631AB3DE1DF8B13DBD05695A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1258A63ECE144B7C8107DC0DE18B8934;
 			remoteInfo = "Pods-PockerController";
 		};
+		8253F75F96D1EE81BB65849D812CDFD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52E6DA0104A4F8C767EF42CAE3D09F4;
+			remoteInfo = MercariQRScanner;
+		};
+		903189D78DB301BF55ED5715E46E9BEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52E6DA0104A4F8C767EF42CAE3D09F4;
+			remoteInfo = MercariQRScanner;
+		};
+		C2DA6802EA186D25F3369B08FDEE8F9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD9F52E07CA8CCC9E5112A7D8C1CE821;
+			remoteInfo = AlertToast;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00015A879E594CB6669BD94C8C53C7AF /* MercariQRScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MercariQRScanner-dummy.m"; sourceTree = "<group>"; };
+		00F03DAF3B69C23D719BBBD698313437 /* ActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = Sources/AlertToast/ActivityIndicator.swift; sourceTree = "<group>"; };
+		0689D068F0BCA25A9AD0BF586B9A6B9A /* MercariQRScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MercariQRScanner-umbrella.h"; sourceTree = "<group>"; };
+		126B7B96069C8EA828B3CAE7C6CC8635 /* AlertToast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlertToast-Info.plist"; sourceTree = "<group>"; };
+		133F078D35FE93412081B2F9A79DA905 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = QRScanner/Images.xcassets; sourceTree = "<group>"; };
 		167D3D6890D5637172A7D5F19E018F44 /* Pods-PockerController-PockerControllerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PockerController-PockerControllerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1F8608EAC40B568EEE0795D62843B8B6 /* MercariQRScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MercariQRScanner.release.xcconfig; sourceTree = "<group>"; };
 		217943230700C95FF7DB542222F742A3 /* Pods-PockerControllerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PockerControllerTests-umbrella.h"; sourceTree = "<group>"; };
-		33ABE4E419F519DDF97C79F4F9CFCF40 /* QRScannerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRScannerError.swift; path = QRScanner/QRScannerError.swift; sourceTree = "<group>"; };
+		28B7293BD72AD015874C6B02FE278319 /* MercariQRScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MercariQRScanner-dummy.m"; sourceTree = "<group>"; };
+		2D471F77EA689F639FE7DDDB5E18D14C /* MercariQRScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MercariQRScanner.release.xcconfig; sourceTree = "<group>"; };
+		2FDA0A2E45F52CB435EE8BFE6978CCC3 /* Bundle+Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Module.swift"; path = "QRScanner/Bundle+Module.swift"; sourceTree = "<group>"; };
 		39C298CD3DD6D31D30CF7904273AE407 /* Pods-PockerControllerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PockerControllerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3A5B9ACA4F8C2FF5E55164C997B996E5 /* QRScannerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRScannerError.swift; path = QRScanner/QRScannerError.swift; sourceTree = "<group>"; };
+		3AA52782AF597539EE7F1124DCBF0F5B /* AlertToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertToast-prefix.pch"; sourceTree = "<group>"; };
 		3ED64634AAB885AFCF3848313E4749D6 /* Pods-PockerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PockerController.debug.xcconfig"; sourceTree = "<group>"; };
 		4A0BE171370C7F719A9BDC6C418AE2DA /* Pods-PockerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PockerController-Info.plist"; sourceTree = "<group>"; };
 		4CC3241CE7A2EF4322F5E2233E7C2D28 /* Pods-PockerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PockerController-umbrella.h"; sourceTree = "<group>"; };
+		4F4C9371E14CED81157077922F2B40D9 /* MercariQRScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MercariQRScanner-Info.plist"; sourceTree = "<group>"; };
 		4F7E58314B510EC09778DEABCE595473 /* Pods-PockerController-PockerControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PockerController-PockerControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		59D2E0AC2E13B8EAEF19D52B2D82F20D /* Pods-PockerControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PockerControllerTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F407DD66B3167662201723D331B6AE8 /* Pods-PockerControllerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PockerControllerTests-Info.plist"; sourceTree = "<group>"; };
-		66BBFD8AC04281754F19F68CCE8054A4 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = QRScanner/Images.xcassets; sourceTree = "<group>"; };
+		607135026022ABBFA33A9DCDE07096C3 /* QRScannerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRScannerView.swift; path = QRScanner/QRScannerView.swift; sourceTree = "<group>"; };
+		630158CDC49BF83C5AD8E74E4998A0C2 /* AlertToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlertToast-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7729CD0176039F43CE2D104F2376B447 /* Pods-PockerControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PockerControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BDD40BBF168C8C9298BEA2847AAC730 /* Pods-PockerControllerTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PockerControllerTests"; path = Pods_PockerControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CDF30802E7938B253ACEAED16543B76 /* MercariQRScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MercariQRScanner-Info.plist"; sourceTree = "<group>"; };
 		7E361C13C8795B28000EA693E058956C /* Pods-PockerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PockerController-dummy.m"; sourceTree = "<group>"; };
-		82F4B56C9CB2A58226674F240CC8BBC1 /* QRScannerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRScannerView.swift; path = QRScanner/QRScannerView.swift; sourceTree = "<group>"; };
+		86920D9F5DCC6146C93203772EC21BEB /* AlertToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlertToast-dummy.m"; sourceTree = "<group>"; };
 		8C50E26A6594E071574499EEFF6A0624 /* Pods-PockerController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PockerController-acknowledgements.plist"; sourceTree = "<group>"; };
 		915361CF4F5BEB9ECA5F7A89DAE63096 /* MercariQRScanner */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MercariQRScanner; path = MercariQRScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93365632824D14A6FEC4B1AB45D9E946 /* MercariQRScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MercariQRScanner-prefix.pch"; sourceTree = "<group>"; };
+		9446C19BE7B60A704BDFE8C37AD8BA55 /* AlertToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertToast.swift; path = Sources/AlertToast/AlertToast.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EF12CAC5978C9B5CABFD933B90CF8EE /* Pods-PockerController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PockerController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A057D0050ED5582FB0407AF74C7AE702 /* AlertToast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertToast.release.xcconfig; sourceTree = "<group>"; };
 		A24E4B48EA80C96261371FA66128347B /* Pods-PockerControllerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PockerControllerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A50F036BE0BFE618C67FA52B80377F3B /* AlertToast */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlertToast; path = AlertToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C233D952A94435EDB1A6A26CDADE0E /* Pods-PockerController-PockerControllerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PockerController-PockerControllerUITests-umbrella.h"; sourceTree = "<group>"; };
+		A9E81D979DB5CEDA32220DEFD5330EC3 /* AlertToast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlertToast.debug.xcconfig; sourceTree = "<group>"; };
 		AA34EBF501693235BAA32AE531446004 /* Pods-PockerController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PockerController"; path = Pods_PockerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5B35E603D1E7F2BB478982EE353DCD /* Pods-PockerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PockerController.release.xcconfig"; sourceTree = "<group>"; };
+		AAF8AE6872E94ADE5B95056A0BF63F99 /* MercariQRScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MercariQRScanner.debug.xcconfig; sourceTree = "<group>"; };
 		AD93C213F861A401B432D1F57F1E07D9 /* Pods-PockerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PockerController.modulemap"; sourceTree = "<group>"; };
-		AEA087CBA76543A3EFDB2DF9F25C9C79 /* MercariQRScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MercariQRScanner.modulemap; sourceTree = "<group>"; };
-		B77A3DCD326C12B2F0A8DA9BB69CDBD9 /* MercariQRScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MercariQRScanner.debug.xcconfig; sourceTree = "<group>"; };
-		B89956AA3619B3688B3A9080D9999C0F /* MercariQRScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MercariQRScanner-umbrella.h"; sourceTree = "<group>"; };
 		BA9FEBF149C17622F329D47EBA64A401 /* Pods-PockerController-PockerControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PockerController-PockerControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BC05FB77F363013B3816BDEFF06EA24B /* MercariQRScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MercariQRScanner-prefix.pch"; sourceTree = "<group>"; };
 		BFBCFDB6DFDCB22BBCDAD36DDED78926 /* Pods-PockerController-PockerControllerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PockerController-PockerControllerUITests-Info.plist"; sourceTree = "<group>"; };
 		C7525F15F0ACE057F8B4990C099981EB /* Pods-PockerController-PockerControllerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PockerController-PockerControllerUITests-dummy.m"; sourceTree = "<group>"; };
 		D121A5A980CF125A12FD70C8CD014362 /* Pods-PockerControllerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PockerControllerTests.modulemap"; sourceTree = "<group>"; };
-		DAE3F1283F84C0EF5234BB575ED84816 /* Bundle+Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Module.swift"; path = "QRScanner/Bundle+Module.swift"; sourceTree = "<group>"; };
+		D81C4C827DEECB9A6E0BAB891AA44164 /* MercariQRScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MercariQRScanner.modulemap; sourceTree = "<group>"; };
 		E37481807FC2B2183477819F4B0F9C66 /* Pods-PockerController-PockerControllerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PockerController-PockerControllerUITests.modulemap"; sourceTree = "<group>"; };
 		E724919305326DC530B1E00FAC00BA43 /* Pods-PockerController-PockerControllerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PockerController-PockerControllerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		E9D73D484C9B31FD7A391D4C1BF4C485 /* Pods-PockerController-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PockerController-frameworks.sh"; sourceTree = "<group>"; };
+		EBD309BA8599E2E99697D6D41593746D /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Sources/AlertToast/BlurView.swift; sourceTree = "<group>"; };
 		EDA241C78B025933534D5E0A232EE7AC /* Pods-PockerController-PockerControllerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PockerController-PockerControllerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F66465852FA8F7B53B3679C7DC6DC722 /* AlertToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlertToast.modulemap; sourceTree = "<group>"; };
 		F7F329EACB7A619C3CE46B3FE2D040E4 /* Pods-PockerControllerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PockerControllerTests-dummy.m"; sourceTree = "<group>"; };
 		FF75C42C18CEE41E26CBC9DB756F9D8D /* Pods-PockerController-PockerControllerUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PockerController-PockerControllerUITests"; path = Pods_PockerController_PockerControllerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,11 +135,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3482C09C97E074D4C676D18C8A30AE18 /* Frameworks */ = {
+		347779031190EDC071A4F2E9073598F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC1ECC73052878AAF1828B000D0315F /* Foundation.framework in Frameworks */,
+				5C7E1FD0252DFA6033E7E08D5984D7B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A65AAF7B213AF4CA676F27C1F92EAC03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4CBFF81934A7B63F82A7798B8FAF747 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D62BB0E09867DA208F7C8C9343FAE5DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB01DCFD55AB52D224446D1BC82255F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,23 +167,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDA2E4C1DE60725DFFB5AC6218590886 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F1C238314453C6D5387BD8C2337CB1E8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0599F5B564476E31F7700E6088851526 /* Resources */ = {
+		0291EE31DD5F1BDDEDE2A2E2A6F87296 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				66BBFD8AC04281754F19F68CCE8054A4 /* Images.xcassets */,
+				133F078D35FE93412081B2F9A79DA905 /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		02B95FAA9EFB8720A0C19B83B1F1718D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F66465852FA8F7B53B3679C7DC6DC722 /* AlertToast.modulemap */,
+				86920D9F5DCC6146C93203772EC21BEB /* AlertToast-dummy.m */,
+				126B7B96069C8EA828B3CAE7C6CC8635 /* AlertToast-Info.plist */,
+				3AA52782AF597539EE7F1124DCBF0F5B /* AlertToast-prefix.pch */,
+				630158CDC49BF83C5AD8E74E4998A0C2 /* AlertToast-umbrella.h */,
+				A9E81D979DB5CEDA32220DEFD5330EC3 /* AlertToast.debug.xcconfig */,
+				A057D0050ED5582FB0407AF74C7AE702 /* AlertToast.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlertToast";
+			sourceTree = "<group>";
+		};
+		1D04E1B7F439E2A2970C31FB605D0FD1 /* AlertToast */ = {
+			isa = PBXGroup;
+			children = (
+				00F03DAF3B69C23D719BBBD698313437 /* ActivityIndicator.swift */,
+				9446C19BE7B60A704BDFE8C37AD8BA55 /* AlertToast.swift */,
+				EBD309BA8599E2E99697D6D41593746D /* BlurView.swift */,
+				02B95FAA9EFB8720A0C19B83B1F1718D /* Support Files */,
+			);
+			name = AlertToast;
+			path = AlertToast;
+			sourceTree = "<group>";
+		};
+		2FC6B51EC7C47C2AF476B41E706A7A4A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D81C4C827DEECB9A6E0BAB891AA44164 /* MercariQRScanner.modulemap */,
+				28B7293BD72AD015874C6B02FE278319 /* MercariQRScanner-dummy.m */,
+				4F4C9371E14CED81157077922F2B40D9 /* MercariQRScanner-Info.plist */,
+				93365632824D14A6FEC4B1AB45D9E946 /* MercariQRScanner-prefix.pch */,
+				0689D068F0BCA25A9AD0BF586B9A6B9A /* MercariQRScanner-umbrella.h */,
+				AAF8AE6872E94ADE5B95056A0BF63F99 /* MercariQRScanner.debug.xcconfig */,
+				2D471F77EA689F639FE7DDDB5E18D14C /* MercariQRScanner.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MercariQRScanner";
 			sourceTree = "<group>";
 		};
 		3AD4F18FC596EEF277B412B3DDFC83F0 /* Pods-PockerController */ = {
@@ -174,27 +255,25 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		B97F959C5FB71B1C83D1690233562FC3 /* Pods */ = {
+		8AAD386E7495A1BEC8FDAF182A3ED3D1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D06F0DF67B86F24851D5C41891086E09 /* MercariQRScanner */,
+				1D04E1B7F439E2A2970C31FB605D0FD1 /* AlertToast */,
+				FF5D16039D32A3E323E2E4414EEF2076 /* MercariQRScanner */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BF8EF7F4990E40CE1F6128B0FD214E1D /* Support Files */ = {
+		AE4733ED336BDCFEBD1EFA4056EB54F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEA087CBA76543A3EFDB2DF9F25C9C79 /* MercariQRScanner.modulemap */,
-				00015A879E594CB6669BD94C8C53C7AF /* MercariQRScanner-dummy.m */,
-				7CDF30802E7938B253ACEAED16543B76 /* MercariQRScanner-Info.plist */,
-				BC05FB77F363013B3816BDEFF06EA24B /* MercariQRScanner-prefix.pch */,
-				B89956AA3619B3688B3A9080D9999C0F /* MercariQRScanner-umbrella.h */,
-				B77A3DCD326C12B2F0A8DA9BB69CDBD9 /* MercariQRScanner.debug.xcconfig */,
-				1F8608EAC40B568EEE0795D62843B8B6 /* MercariQRScanner.release.xcconfig */,
+				A50F036BE0BFE618C67FA52B80377F3B /* AlertToast */,
+				915361CF4F5BEB9ECA5F7A89DAE63096 /* MercariQRScanner */,
+				AA34EBF501693235BAA32AE531446004 /* Pods-PockerController */,
+				FF75C42C18CEE41E26CBC9DB756F9D8D /* Pods-PockerController-PockerControllerUITests */,
+				7BDD40BBF168C8C9298BEA2847AAC730 /* Pods-PockerControllerTests */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MercariQRScanner";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CD8E0686FF310253E066F6133391627D /* Pods-PockerControllerTests */ = {
@@ -218,23 +297,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				B97F959C5FB71B1C83D1690233562FC3 /* Pods */,
-				FD5E6ABBCEF6CDC9B950EB183021BAAB /* Products */,
+				8AAD386E7495A1BEC8FDAF182A3ED3D1 /* Pods */,
+				AE4733ED336BDCFEBD1EFA4056EB54F4 /* Products */,
 				515ACF136923353C56CA153FDC060B9F /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D06F0DF67B86F24851D5C41891086E09 /* MercariQRScanner */ = {
-			isa = PBXGroup;
-			children = (
-				DAE3F1283F84C0EF5234BB575ED84816 /* Bundle+Module.swift */,
-				33ABE4E419F519DDF97C79F4F9CFCF40 /* QRScannerError.swift */,
-				82F4B56C9CB2A58226674F240CC8BBC1 /* QRScannerView.swift */,
-				0599F5B564476E31F7700E6088851526 /* Resources */,
-				BF8EF7F4990E40CE1F6128B0FD214E1D /* Support Files */,
-			);
-			name = MercariQRScanner;
-			path = MercariQRScanner;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -262,33 +328,35 @@
 			path = "Target Support Files/Pods-PockerController-PockerControllerUITests";
 			sourceTree = "<group>";
 		};
-		FD5E6ABBCEF6CDC9B950EB183021BAAB /* Products */ = {
+		FF5D16039D32A3E323E2E4414EEF2076 /* MercariQRScanner */ = {
 			isa = PBXGroup;
 			children = (
-				915361CF4F5BEB9ECA5F7A89DAE63096 /* MercariQRScanner */,
-				AA34EBF501693235BAA32AE531446004 /* Pods-PockerController */,
-				FF75C42C18CEE41E26CBC9DB756F9D8D /* Pods-PockerController-PockerControllerUITests */,
-				7BDD40BBF168C8C9298BEA2847AAC730 /* Pods-PockerControllerTests */,
+				2FDA0A2E45F52CB435EE8BFE6978CCC3 /* Bundle+Module.swift */,
+				3A5B9ACA4F8C2FF5E55164C997B996E5 /* QRScannerError.swift */,
+				607135026022ABBFA33A9DCDE07096C3 /* QRScannerView.swift */,
+				0291EE31DD5F1BDDEDE2A2E2A6F87296 /* Resources */,
+				2FC6B51EC7C47C2AF476B41E706A7A4A /* Support Files */,
 			);
-			name = Products;
+			name = MercariQRScanner;
+			path = MercariQRScanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2D741E06FE5B5F70D5F9F558AB82713C /* Headers */ = {
+		1412BC160EDBB2794BF3D44D0A62CA0E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB4C5FB396BA1ACA7A0135CDFD487E38 /* Pods-PockerController-PockerControllerUITests-umbrella.h in Headers */,
+				11BEB90CEF2276C65CDFD74A2D44B150 /* Pods-PockerController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51E4AE778B577463BE1D9391E6EDD185 /* Headers */ = {
+		44A84C91FAC6DAD40F1A43DEF8DDCA81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739AC9CF838023985BD92678FC66D6D4 /* Pods-PockerController-umbrella.h in Headers */,
+				6EA08F424ACCD3B0D6222BEF90912961 /* AlertToast-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +365,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6CA55E19F6E08B7CC05B1CD9F08AA7 /* MercariQRScanner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BF7ACD3ED4F3981CE4E7B2EE068E354 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				097DCEE67EB02F7A7939FAFBFAE932C2 /* Pods-PockerController-PockerControllerUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,17 +389,18 @@
 /* Begin PBXNativeTarget section */
 		1258A63ECE144B7C8107DC0DE18B8934 /* Pods-PockerController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B978BDAD492928B2D170F97D00CAA5B5 /* Build configuration list for PBXNativeTarget "Pods-PockerController" */;
+			buildConfigurationList = 4E24A4E46B256A3F2B981474C27424D8 /* Build configuration list for PBXNativeTarget "Pods-PockerController" */;
 			buildPhases = (
-				51E4AE778B577463BE1D9391E6EDD185 /* Headers */,
-				002FA921E239F79B8DA9834CBB2A1CF3 /* Sources */,
-				EDA2E4C1DE60725DFFB5AC6218590886 /* Frameworks */,
-				19C60AFCB8E637C02E5FE730682A6088 /* Resources */,
+				1412BC160EDBB2794BF3D44D0A62CA0E /* Headers */,
+				672F7B1EBD9FA1D620AE6F1C7FBD7832 /* Sources */,
+				A65AAF7B213AF4CA676F27C1F92EAC03 /* Frameworks */,
+				8C40B6A686D432DB0CB84EAB1F2CE1D0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0BF04A74D5C30B022F7AAA3D3DBD4BFA /* PBXTargetDependency */,
+				DFAC2259DD04A1E5689EB2A37964C456 /* PBXTargetDependency */,
+				9D8F53BD21146E9D086495984EC5032A /* PBXTargetDependency */,
 			);
 			name = "Pods-PockerController";
 			productName = Pods_PockerController;
@@ -342,7 +419,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				71F4A6F85A6D2350C1052FB6ABFC38FF /* PBXTargetDependency */,
+				AE9E7346284717B1AC075C5F1A25BBED /* PBXTargetDependency */,
 			);
 			name = "Pods-PockerControllerTests";
 			productName = Pods_PockerControllerTests;
@@ -351,21 +428,40 @@
 		};
 		646B60769FBCF4683F9FDE1080EA587F /* Pods-PockerController-PockerControllerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1C061F170FAB6896324A6A9CF365A3F /* Build configuration list for PBXNativeTarget "Pods-PockerController-PockerControllerUITests" */;
+			buildConfigurationList = 3F0590C2F3932F641942A755D81B479D /* Build configuration list for PBXNativeTarget "Pods-PockerController-PockerControllerUITests" */;
 			buildPhases = (
-				2D741E06FE5B5F70D5F9F558AB82713C /* Headers */,
-				FB9F612834ED6D7C1F6AF6D8879EF4F9 /* Sources */,
-				3482C09C97E074D4C676D18C8A30AE18 /* Frameworks */,
-				E3BB087B131660928AD7FC8141F85572 /* Resources */,
+				8BF7ACD3ED4F3981CE4E7B2EE068E354 /* Headers */,
+				6D949B529B3F44A9414EF0E01349B407 /* Sources */,
+				D62BB0E09867DA208F7C8C9343FAE5DB /* Frameworks */,
+				4BB390BB0FF8D4E7375223517C22EF33 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B36B872597CD096047720D4AFC73C92E /* PBXTargetDependency */,
+				36566C535A5DE7C90AC912AB6B8FC69B /* PBXTargetDependency */,
+				9A5CEA95555F7C8DA500A40314AA972B /* PBXTargetDependency */,
 			);
 			name = "Pods-PockerController-PockerControllerUITests";
 			productName = Pods_PockerController_PockerControllerUITests;
 			productReference = FF75C42C18CEE41E26CBC9DB756F9D8D /* Pods-PockerController-PockerControllerUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD9F52E07CA8CCC9E5112A7D8C1CE821 /* AlertToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 058CF4B13CD220E4F99FC2BAEA8B57E3 /* Build configuration list for PBXNativeTarget "AlertToast" */;
+			buildPhases = (
+				44A84C91FAC6DAD40F1A43DEF8DDCA81 /* Headers */,
+				E433AAB9933A759630771F55C9A60EBF /* Sources */,
+				347779031190EDC071A4F2E9073598F0 /* Frameworks */,
+				59FC49F4186BE3B64D14966824FEF367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlertToast;
+			productName = AlertToast;
+			productReference = A50F036BE0BFE618C67FA52B80377F3B /* AlertToast */;
 			productType = "com.apple.product-type.framework";
 		};
 		F52E6DA0104A4F8C767EF42CAE3D09F4 /* MercariQRScanner */ = {
@@ -404,10 +500,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = FD5E6ABBCEF6CDC9B950EB183021BAAB /* Products */;
+			productRefGroup = AE4733ED336BDCFEBD1EFA4056EB54F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BD9F52E07CA8CCC9E5112A7D8C1CE821 /* AlertToast */,
 				F52E6DA0104A4F8C767EF42CAE3D09F4 /* MercariQRScanner */,
 				1258A63ECE144B7C8107DC0DE18B8934 /* Pods-PockerController */,
 				646B60769FBCF4683F9FDE1080EA587F /* Pods-PockerController-PockerControllerUITests */,
@@ -417,14 +514,28 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		19C60AFCB8E637C02E5FE730682A6088 /* Resources */ = {
+		20F3ADA5505EF33AB94C81BB6CCCF040 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20F3ADA5505EF33AB94C81BB6CCCF040 /* Resources */ = {
+		4BB390BB0FF8D4E7375223517C22EF33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59FC49F4186BE3B64D14966824FEF367 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C40B6A686D432DB0CB84EAB1F2CE1D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,21 +550,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3BB087B131660928AD7FC8141F85572 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		002FA921E239F79B8DA9834CBB2A1CF3 /* Sources */ = {
+		672F7B1EBD9FA1D620AE6F1C7FBD7832 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E4F7E2B4949D159D4827838149E727 /* Pods-PockerController-dummy.m in Sources */,
+				AD86936416CD760B15B9501AA7F39422 /* Pods-PockerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D949B529B3F44A9414EF0E01349B407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5003FEBEAB2431EE9068B663126F4EF /* Pods-PockerController-PockerControllerUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,39 +588,127 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB9F612834ED6D7C1F6AF6D8879EF4F9 /* Sources */ = {
+		E433AAB9933A759630771F55C9A60EBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D74CB28F30E06A2F073E4A4BD94EA4B /* Pods-PockerController-PockerControllerUITests-dummy.m in Sources */,
+				DAE75918F0786809E98E99512119DF8D /* ActivityIndicator.swift in Sources */,
+				89068BEF39B046B28FD6DA14201044DE /* AlertToast.swift in Sources */,
+				ABCC96A3F5A122791DAB8A1CFA9BD50D /* AlertToast-dummy.m in Sources */,
+				481F3BE2185022F134DFD932BBD79A40 /* BlurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0BF04A74D5C30B022F7AAA3D3DBD4BFA /* PBXTargetDependency */ = {
+		36566C535A5DE7C90AC912AB6B8FC69B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlertToast;
+			target = BD9F52E07CA8CCC9E5112A7D8C1CE821 /* AlertToast */;
+			targetProxy = 0A293347D9AC49497DE5E4575BB885D9 /* PBXContainerItemProxy */;
+		};
+		9A5CEA95555F7C8DA500A40314AA972B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MercariQRScanner;
 			target = F52E6DA0104A4F8C767EF42CAE3D09F4 /* MercariQRScanner */;
-			targetProxy = 50BE3A09E8344FD16C81661A41D0DBC1 /* PBXContainerItemProxy */;
+			targetProxy = 8253F75F96D1EE81BB65849D812CDFD9 /* PBXContainerItemProxy */;
 		};
-		71F4A6F85A6D2350C1052FB6ABFC38FF /* PBXTargetDependency */ = {
+		9D8F53BD21146E9D086495984EC5032A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MercariQRScanner;
+			target = F52E6DA0104A4F8C767EF42CAE3D09F4 /* MercariQRScanner */;
+			targetProxy = 903189D78DB301BF55ED5715E46E9BEA /* PBXContainerItemProxy */;
+		};
+		AE9E7346284717B1AC075C5F1A25BBED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PockerController";
 			target = 1258A63ECE144B7C8107DC0DE18B8934 /* Pods-PockerController */;
-			targetProxy = A8DF765949C6E4D978262902B62C2707 /* PBXContainerItemProxy */;
+			targetProxy = 23929C0D631AB3DE1DF8B13DBD05695A /* PBXContainerItemProxy */;
 		};
-		B36B872597CD096047720D4AFC73C92E /* PBXTargetDependency */ = {
+		DFAC2259DD04A1E5689EB2A37964C456 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MercariQRScanner;
-			target = F52E6DA0104A4F8C767EF42CAE3D09F4 /* MercariQRScanner */;
-			targetProxy = 639DE58C18433DCBC9FE8DA91290B1A1 /* PBXContainerItemProxy */;
+			name = AlertToast;
+			target = BD9F52E07CA8CCC9E5112A7D8C1CE821 /* AlertToast */;
+			targetProxy = C2DA6802EA186D25F3369B08FDEE8F9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02E8542CB901561294E271011A3F189E /* Release */ = {
+		048AFB9BE277D96ECBD14AF2F4DFDCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A057D0050ED5582FB0407AF74C7AE702 /* AlertToast.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlertToast/AlertToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertToast/AlertToast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlertToast/AlertToast.modulemap";
+				PRODUCT_MODULE_NAME = AlertToast;
+				PRODUCT_NAME = AlertToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		144906E22DC0A6866446E0CCAC70F918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED64634AAB885AFCF3848313E4749D6 /* Pods-PockerController.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PockerController/Pods-PockerController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PockerController/Pods-PockerController.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E36A2EC55BFAE22E769460E703F0C64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA5B35E603D1E7F2BB478982EE353DCD /* Pods-PockerController.release.xcconfig */;
 			buildSettings = {
@@ -546,9 +746,46 @@
 			};
 			name = Release;
 		};
+		2401CEFE3F59D3F280AA3D086BB51962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7E58314B510EC09778DEABCE595473 /* Pods-PockerController-PockerControllerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PockerController-PockerControllerUITests/Pods-PockerController-PockerControllerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PockerController-PockerControllerUITests/Pods-PockerController-PockerControllerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		353310E7DF2D6B146F0049A1DD78A655 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B77A3DCD326C12B2F0A8DA9BB69CDBD9 /* MercariQRScanner.debug.xcconfig */;
+			baseConfigurationReference = AAF8AE6872E94ADE5B95056A0BF63F99 /* MercariQRScanner.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -684,43 +921,6 @@
 			};
 			name = Debug;
 		};
-		4F763B93A1C139F2B45062BA00252ED7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F7E58314B510EC09778DEABCE595473 /* Pods-PockerController-PockerControllerUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PockerController-PockerControllerUITests/Pods-PockerController-PockerControllerUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PockerController-PockerControllerUITests/Pods-PockerController-PockerControllerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -783,81 +983,6 @@
 			};
 			name = Release;
 		};
-		64A23F059658283F8D1C10A2CB89A73B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3ED64634AAB885AFCF3848313E4749D6 /* Pods-PockerController.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PockerController/Pods-PockerController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PockerController/Pods-PockerController.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		71083A974D5EFF1B38DC2995C645A649 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA9FEBF149C17622F329D47EBA64A401 /* Pods-PockerController-PockerControllerUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PockerController-PockerControllerUITests/Pods-PockerController-PockerControllerUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PockerController-PockerControllerUITests/Pods-PockerController-PockerControllerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		98520BB4AB02CA8E785298EF27C21B6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59D2E0AC2E13B8EAEF19D52B2D82F20D /* Pods-PockerControllerTests.release.xcconfig */;
@@ -896,9 +1021,44 @@
 			};
 			name = Release;
 		};
+		B7C854466008CDE402EC68A4D7263738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E81D979DB5CEDA32220DEFD5330EC3 /* AlertToast.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlertToast/AlertToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlertToast/AlertToast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlertToast/AlertToast.modulemap";
+				PRODUCT_MODULE_NAME = AlertToast;
+				PRODUCT_NAME = AlertToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		C730C48A0A6F5C89DDDFCD2D09313F24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F8608EAC40B568EEE0795D62843B8B6 /* MercariQRScanner.release.xcconfig */;
+			baseConfigurationReference = 2D471F77EA689F639FE7DDDB5E18D14C /* MercariQRScanner.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -932,9 +1092,65 @@
 			};
 			name = Release;
 		};
+		DDF22FFDC61493611A9F2C176DD9099C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA9FEBF149C17622F329D47EBA64A401 /* Pods-PockerController-PockerControllerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PockerController-PockerControllerUITests/Pods-PockerController-PockerControllerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PockerController-PockerControllerUITests/Pods-PockerController-PockerControllerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		058CF4B13CD220E4F99FC2BAEA8B57E3 /* Build configuration list for PBXNativeTarget "AlertToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C854466008CDE402EC68A4D7263738 /* Debug */,
+				048AFB9BE277D96ECBD14AF2F4DFDCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F0590C2F3932F641942A755D81B479D /* Build configuration list for PBXNativeTarget "Pods-PockerController-PockerControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2401CEFE3F59D3F280AA3D086BB51962 /* Debug */,
+				DDF22FFDC61493611A9F2C176DD9099C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -944,29 +1160,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4E24A4E46B256A3F2B981474C27424D8 /* Build configuration list for PBXNativeTarget "Pods-PockerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144906E22DC0A6866446E0CCAC70F918 /* Debug */,
+				1E36A2EC55BFAE22E769460E703F0C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7DB8D3C965A40C5A7E49FD2AFDD1087B /* Build configuration list for PBXNativeTarget "MercariQRScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				353310E7DF2D6B146F0049A1DD78A655 /* Debug */,
 				C730C48A0A6F5C89DDDFCD2D09313F24 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B978BDAD492928B2D170F97D00CAA5B5 /* Build configuration list for PBXNativeTarget "Pods-PockerController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64A23F059658283F8D1C10A2CB89A73B /* Debug */,
-				02E8542CB901561294E271011A3F189E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C1C061F170FAB6896324A6A9CF365A3F /* Build configuration list for PBXNativeTarget "Pods-PockerController-PockerControllerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4F763B93A1C139F2B45062BA00252ED7 /* Debug */,
-				71083A974D5EFF1B38DC2995C645A649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,6 +9,8 @@ import Foundation
 
 final class QRCodeScannerWorker: ObservableObject {
     @Published var isLoading = true
+    @Published var error: Error? = nil
+    @Published var hasError = false
     
     private let store = Store.getStore()
     private let api = Api.getInstance()
@@ -18,7 +20,8 @@ final class QRCodeScannerWorker: ObservableObject {
             token: token,
             deviceInformation: deviceInformation,
             handleError: { error in
-               print("error", error)
+                self.error = error
+                self.hasError = true
             },
             handleSuccess: { result in
                 let authToken = result.authToken.access

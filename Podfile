@@ -6,6 +6,7 @@ target 'PockerController' do
   use_frameworks!
 
   # Pods for PockerController
+  pod 'AlertToast'
   pod 'MercariQRScanner', :git => "https://github.com/Looking4Cache/QRScanner.git"
 
   target 'PockerControllerTests' do
