@@ -8,6 +8,7 @@ target 'PockerController' do
   # Pods for PockerController
   pod 'AlertToast'
   pod 'MercariQRScanner', :git => "https://github.com/Looking4Cache/QRScanner.git"
+  pod 'Socket.IO-Client-Swift'
 
   target 'PockerControllerTests' do
     inherit! :search_paths

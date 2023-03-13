@@ -14,7 +14,6 @@ enum Action {
     case setUser(_ user: User)
     case setTimer(_ timer: Int)
     case resetTimer
-    case setGameLoaded(_ isLoaded: Bool)
     case setIsAudio(_ isAudio: Bool)
     case setIsCamera(_ isCamera: Bool)
     case setIsCardOpened(_ IsCardOpened: Bool)

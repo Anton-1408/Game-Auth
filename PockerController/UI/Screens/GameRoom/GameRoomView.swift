@@ -11,7 +11,7 @@ struct GameRoomView: View {
     @ObservedObject var viewModel: GameRoomViewModel
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Game room")
     }
 }
 

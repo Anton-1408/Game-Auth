@@ -21,8 +21,6 @@ func reducer(state: AppState, action: Action) -> AppState {
             state.timer = timer
         case .resetTimer:
             state.timer = 0
-        case .setGameLoaded(let isGameLoaded):
-            state.isGameLoaded = isGameLoaded
         case .setIsAudio(let isAudio):
             state.dailyTalkController.isAudio = isAudio
         case .setIsCamera(let isCamera):

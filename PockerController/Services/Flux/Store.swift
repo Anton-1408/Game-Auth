@@ -36,7 +36,6 @@ let initialState = AppState.init(
     timer: 0,
     isCardOpened: false,
     dailyTalkController: .init(isAudio: true, isCamera: true),
-    isGameLoaded: false,
     playersWaiting: [],
     oneToOneCall: .init(informationCall: nil, isAccepted: false, hasCallIncoming: false, roomId: nil, isLeaved: false),
     playerFoldMaked: false

@@ -1,14 +1,20 @@
 PODS:
   - AlertToast (1.3.9)
   - MercariQRScanner (1.9.0)
+  - Socket.IO-Client-Swift (16.0.1):
+    - Starscream (~> 4.0)
+  - Starscream (4.0.4)
 
 DEPENDENCIES:
   - AlertToast
   - MercariQRScanner (from `https://github.com/Looking4Cache/QRScanner.git`)
+  - Socket.IO-Client-Swift
 
 SPEC REPOS:
   trunk:
     - AlertToast
+    - Socket.IO-Client-Swift
+    - Starscream
 
 EXTERNAL SOURCES:
   MercariQRScanner:
@@ -22,7 +28,9 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AlertToast: e8db15da727beff75500bcf33a78cd617f408fa1
   MercariQRScanner: e5aea873969af59b09b4cc411fc1c5b6293dba44
+  Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
 
-PODFILE CHECKSUM: 99ae6571d1054295d513e7ab123735dcc1c0af23
+PODFILE CHECKSUM: ee090f10bf0deabf022f1a3f0e3876d524f0be94
 
 COCOAPODS: 1.11.3

@@ -16,3 +16,10 @@ struct ActionOneToOneCall {
     var isMyRequest: Bool
     var informationCall: InformationCall
 }
+
+
+struct DataForAuthInitialScreen {
+    var isGameFinished: Bool
+    var isGameOver: Bool
+    var isPlayerInGame: Bool
+}

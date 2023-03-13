@@ -15,7 +15,6 @@ struct AppState {
     var timer: Int
     var isCardOpened: Bool
     var dailyTalkController: DailyTalkController
-    var isGameLoaded: Bool
     var playersWaiting: [PlayerOfWaiting]
     var oneToOneCall: OneToOneCall
     var playerFoldMaked: Bool

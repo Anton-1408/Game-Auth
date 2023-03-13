@@ -92,6 +92,10 @@
 		10B8261F29BB7E5B00A11EA3 /* GameRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261E29BB7E5B00A11EA3 /* GameRoomView.swift */; };
 		10B8262129BB7E6700A11EA3 /* GameRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8262029BB7E6700A11EA3 /* GameRoomViewModel.swift */; };
 		10B8262329BB7E9A00A11EA3 /* GameRoomAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8262229BB7E9A00A11EA3 /* GameRoomAssembly.swift */; };
+		10B8262529BC335B00A11EA3 /* InitialAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8262429BC335B00A11EA3 /* InitialAuthView.swift */; };
+		10B8262729BC491D00A11EA3 /* WebSocketsSubscriptionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8262629BC491D00A11EA3 /* WebSocketsSubscriptionWorker.swift */; };
+		10B8262B29BC635600A11EA3 /* WebSocketTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8262A29BC635600A11EA3 /* WebSocketTrigger.swift */; };
+		10B8262D29BC637200A11EA3 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8262C29BC637200A11EA3 /* WebSocketManager.swift */; };
 		10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA0292299A7C5500A1739F /* PockerControllerApp.swift */; };
 		10BA0297299A7C5600A1739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0296299A7C5600A1739F /* Assets.xcassets */; };
 		10BA029A299A7C5600A1739F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BA0299299A7C5600A1739F /* Preview Assets.xcassets */; };
@@ -226,6 +230,10 @@
 		10B8261E29BB7E5B00A11EA3 /* GameRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoomView.swift; sourceTree = "<group>"; };
 		10B8262029BB7E6700A11EA3 /* GameRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoomViewModel.swift; sourceTree = "<group>"; };
 		10B8262229BB7E9A00A11EA3 /* GameRoomAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRoomAssembly.swift; sourceTree = "<group>"; };
+		10B8262429BC335B00A11EA3 /* InitialAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialAuthView.swift; sourceTree = "<group>"; };
+		10B8262629BC491D00A11EA3 /* WebSocketsSubscriptionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketsSubscriptionWorker.swift; sourceTree = "<group>"; };
+		10B8262A29BC635600A11EA3 /* WebSocketTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTrigger.swift; sourceTree = "<group>"; };
+		10B8262C29BC637200A11EA3 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		10BA028F299A7C5500A1739F /* PockerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA0292299A7C5500A1739F /* PockerControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerApp.swift; sourceTree = "<group>"; };
 		10BA0296299A7C5600A1739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -358,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */,
+				10B8262629BC491D00A11EA3 /* WebSocketsSubscriptionWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -366,6 +375,8 @@
 			isa = PBXGroup;
 			children = (
 				1094008029A508BB00358EE8 /* Events.swift */,
+				10B8262A29BC635600A11EA3 /* WebSocketTrigger.swift */,
+				10B8262C29BC637200A11EA3 /* WebSocketManager.swift */,
 			);
 			path = Websocket;
 			sourceTree = "<group>";
@@ -556,6 +567,7 @@
 				10A1FFDF29A87A8E00CB08ED /* QRCodeScanner */,
 				10A1FFDC29A8792C00CB08ED /* Welcome */,
 				10BA02CE299D1A8C00A1739F /* SplashView.swift */,
+				10B8262429BC335B00A11EA3 /* InitialAuthView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -959,6 +971,7 @@
 				10BA02D729A10C0700A1739F /* Typography.swift in Sources */,
 				10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */,
 				10B8261F29BB7E5B00A11EA3 /* GameRoomView.swift in Sources */,
+				10B8262529BC335B00A11EA3 /* InitialAuthView.swift in Sources */,
 				10BA02D529A0B23400A1739F /* ShemeColor.swift in Sources */,
 				10B8261D29BB7D1900A11EA3 /* BarRoomAssembly.swift in Sources */,
 				10B8261329BB7A1100A11EA3 /* WaitingRoomViewModel.swift in Sources */,
@@ -974,6 +987,7 @@
 				10BA02E329A2113200A1739F /* GuestStack.swift in Sources */,
 				10BA02ED29A2141600A1739F /* GuestRoute.swift in Sources */,
 				10A1FFF129AA0B7B00CB08ED /* DeviceRotationViewModifier.swift in Sources */,
+				10B8262729BC491D00A11EA3 /* WebSocketsSubscriptionWorker.swift in Sources */,
 				1094008129A508BB00358EE8 /* Events.swift in Sources */,
 				10AEBF7029B8286700439B51 /* Reducer.swift in Sources */,
 				10A1FFDB29A874EE00CB08ED /* RoomJoingToTheGameView.swift in Sources */,
@@ -984,6 +998,8 @@
 				10A1FFD929A739B900CB08ED /* QRCodeViewController.swift in Sources */,
 				10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */,
 				10B8262329BB7E9A00A11EA3 /* GameRoomAssembly.swift in Sources */,
+				10B8262D29BC637200A11EA3 /* WebSocketManager.swift in Sources */,
+				10B8262B29BC635600A11EA3 /* WebSocketTrigger.swift in Sources */,
 				10BA02E529A2114100A1739F /* AuthStack.swift in Sources */,
 				10A1FFEE29A8D0E600CB08ED /* Back.swift in Sources */,
 				10A1FFF529AA5C4700CB08ED /* RequestParams.swift in Sources */,
