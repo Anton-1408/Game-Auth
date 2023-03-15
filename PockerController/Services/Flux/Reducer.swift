@@ -39,32 +39,34 @@ func reducer(state: AppState, action: Action) -> AppState {
             state.game.isGameOver = IsGameOver
         case .setLastAction(let lastAction):
             state.game.lastAction = lastAction
-    case .setProcessGame(let game):
-        state.game = .init(
-            id: game.id,
-            isGameStarted: game.gamestart,
-            lastAction: state.game.lastAction ?? nil,
-            isGameOver: state.game.isGameOver,
-            bigBlind: game.bigBlind,
-            smallBlind: game.smallBlind,
-            raiseAmount: game.raiseAmount,
-            pot: game.pot,
-            smallBlindPosition: game.smallBlindPosition,
-            bigBlindPosition: game.bigBlindPosition,
-            runninground: game.runninground,
-            finish: game.finish,
-            pause: game.pause
-        )
-    case .leaveCall:
-        state.oneToOneCall.isLeaved = true
-    case .aceptCall(let roomId):
-        state.oneToOneCall.roomId = roomId
-    case .skipOneToOneRequest:
-        state.oneToOneCall = initialState.oneToOneCall
-    case .setOneToOneRequestBy(let oneToOneCall):
-        state.oneToOneCall.hasCallIncoming = oneToOneCall.isMyRequest
-        state.oneToOneCall.informationCall = oneToOneCall.informationCall
-    }
+        case .setGameId(let gameId):
+            state.game.id = gameId
+        case .setProcessGame(let game):
+            state.game = .init(
+                id: game.id,
+                isGameStarted: game.gamestart,
+                lastAction: state.game.lastAction ?? nil,
+                isGameOver: state.game.isGameOver,
+                bigBlind: game.bigBlind,
+                smallBlind: game.smallBlind,
+                raiseAmount: game.raiseAmount,
+                pot: game.pot,
+                smallBlindPosition: game.smallBlindPosition,
+                bigBlindPosition: game.bigBlindPosition,
+                runninground: game.runninground,
+                finish: game.finish,
+                pause: game.pause
+            )
+        case .leaveCall:
+            state.oneToOneCall.isLeaved = true
+        case .aceptCall(let roomId):
+            state.oneToOneCall.roomId = roomId
+        case .skipOneToOneRequest:
+            state.oneToOneCall = initialState.oneToOneCall
+        case .setOneToOneRequestBy(let oneToOneCall):
+            state.oneToOneCall.hasCallIncoming = oneToOneCall.isMyRequest
+            state.oneToOneCall.informationCall = oneToOneCall.informationCall
+        }
     
     return state
 }

@@ -75,6 +75,8 @@ class Api {
                 }
                 
             } catch {
+                print("error", error)
+                
                 handleError(
                     .init(
                         title: DefaultError.title,

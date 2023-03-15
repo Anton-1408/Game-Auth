@@ -27,6 +27,7 @@ final class QRCodeScannerWorker: ObservableObject {
                 let authToken = result.authToken.access
                 let userId = result.user.id
                 let userName = result.user.name
+                let gameId = result.game.id
 
                 self.isLoading = false
 
@@ -43,6 +44,7 @@ final class QRCodeScannerWorker: ObservableObject {
                             name: userName
                         )
                     ))
+                    self.store.dispath(.setGameId(gameId))
                 }
             }
         )

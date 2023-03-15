@@ -11,11 +11,11 @@ struct AppState {
     var authToken: Auth?
     var game: Game
     var user: User?
-    var players: [PlayersOfGame]
+    var players: [Player]
     var timer: Int
     var isCardOpened: Bool
     var dailyTalkController: DailyTalkController
-    var playersWaiting: [PlayerOfWaiting]
+    var playersWaiting: [Player]
     var oneToOneCall: OneToOneCall
     var playerFoldMaked: Bool
 }
@@ -67,42 +67,3 @@ struct OneToOneCall {
     var isLeaved: Bool
 }
 
-struct PlayersOfGame: Identifiable {
-    var action: String?
-    var actionType: String?
-    var avatar: String
-    var cards: Array<String>
-    var email: String
-    var id: String
-    var meetingToken: String
-    var name: String
-    var playing: Bool
-    var position: Int
-    var tablePosition: Int
-    var tentativeAction: String?
-    var timebank: Int
-    var wallet: Int
-    var fold: Bool
-    var prevPot: Int
-    var pot: Int
-}
-
-struct PlayerOfWaiting: Identifiable {
-    var action: String?
-    var actionType: String?
-    var avatar: String
-    var cards: Array<String>
-    var email: String
-    var id: String
-    var meetingToken: String
-    var name: String
-    var playing: Bool
-    var position: Int
-    var tablePosition: Int
-    var tentativeAction: String?
-    var timebank: Int
-    var wallet: Int
-    var fold: Bool
-    var prevPot: Int
-    var pot: Int
-}

@@ -44,15 +44,42 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
     }
     
     private func updateGame() {
-        webSocket.socket.on(EventOfListen.updateGame) {data, acc in
-            print("updateGame")
+        webSocket.socket.on(EventOfListen.updateGame) { data, acc in
+            do {
+                let response = data[0] as? [String: Any];
+                
+                let game = try JSONDecoder().decode(GameData.self, from: JSONSerialization.data(withJSONObject: response?["game"] ?? []))
+                let playersForRound = game.getPlayersForRound(game.runninground)
+                
+                
+                self.store.dispath(.setProcessGame(game))
+                self.store.dispath(.setWaitingPlayers(game.waitingPlayers))
+                self.store.dispath(.setPlayers(playersForRound))
+                
+                if (!game.gamestart){
+                    self.store.dispath(.resetTimer)
+                    self.store.dispath(.setLastAction(nil))
+                    self.store.dispath(.setIsGamePause(false))
+                }
+            } catch {
+                print("error", error)
+            }
+            
             self.isGameLoaded = true
         }
     }
     
     private func wtUpdate() {
         webSocket.socket.on(EventOfListen.wtUpdate) {data, acc in
-            print("updateGame")
+            do {
+                let response = data[0] as? [String: Any];
+                
+                let game = try JSONDecoder().decode(GameData.self, from: JSONSerialization.data(withJSONObject: response?["game"] ?? []))
+                
+                print("game", game.id)
+            } catch {
+                print("error", error)
+            }
             self.isGameLoaded = true
         }
     }

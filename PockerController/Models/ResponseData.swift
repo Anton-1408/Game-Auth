@@ -70,6 +70,25 @@ struct GameData: Identifiable, Decodable {
     var usedCards: Array<String>
     var waitingPlayers: Array<Player>
     var bigBlindPosition: Int?
+    
+    func getPlayersForRound(_ runninground: Int) -> [Player]  {
+        switch runninground {
+            case 0:
+                return self.players;
+            case 1:
+                return self.preflopround
+            case 2:
+                return self.flopround
+            case 3:
+                return self.turnround
+            case 4:
+                return self.riverround
+            case 5:
+                return self.showdown
+            default:
+                return self.players
+        }
+    }
 }
 
 struct UserData: Decodable, Identifiable {

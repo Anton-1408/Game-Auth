@@ -12,7 +12,7 @@ func hasAuth(_ state: AppState) -> Bool {
     return state.authToken != nil
 }
 
-func getPlayerById (state: AppState, playerId: String?) -> PlayersOfGame? {
+func getPlayerById (state: AppState, playerId: String?) -> Player? {
     let players = state.players;
     
     let currentPlayer = players.first(where: {player -> Bool in
