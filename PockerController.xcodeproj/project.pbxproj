@@ -82,6 +82,7 @@
 		10AEBF7229B8287800439B51 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF7129B8287800439B51 /* Store.swift */; };
 		10AEBF7629B857F000439B51 /* QRCodeScannerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */; };
 		10AEBF7B29B876B200439B51 /* Selectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF7A29B876B200439B51 /* Selectors.swift */; };
+		10B530DC29C5D0A100503187 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B530DB29C5D0A100503187 /* IconButton.swift */; };
 		10B8261129BA210800A11EA3 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261029BA210800A11EA3 /* Types.swift */; };
 		10B8261329BB7A1100A11EA3 /* WaitingRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */; };
 		10B8261529BB7A3200A11EA3 /* WaitingRoomAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */; };
@@ -220,6 +221,7 @@
 		10AEBF7129B8287800439B51 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerWorker.swift; sourceTree = "<group>"; };
 		10AEBF7A29B876B200439B51 /* Selectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selectors.swift; sourceTree = "<group>"; };
+		10B530DB29C5D0A100503187 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		10B8261029BA210800A11EA3 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomViewModel.swift; sourceTree = "<group>"; };
 		10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomAssembly.swift; sourceTree = "<group>"; };
@@ -611,6 +613,7 @@
 			children = (
 				10BA02D929A1E15700A1739F /* GoldButton.swift */,
 				10A1FFED29A8D0E600CB08ED /* Back.swift */,
+				10B530DB29C5D0A100503187 /* IconButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -996,6 +999,7 @@
 				10A1FFE329A87D9000CB08ED /* WelcomeAssembly.swift in Sources */,
 				10A1FFDE29A8794D00CB08ED /* WelcomeViewModel.swift in Sources */,
 				10A1FFD929A739B900CB08ED /* QRCodeViewController.swift in Sources */,
+				10B530DC29C5D0A100503187 /* IconButton.swift in Sources */,
 				10BA0293299A7C5500A1739F /* PockerControllerApp.swift in Sources */,
 				10B8262329BB7E9A00A11EA3 /* GameRoomAssembly.swift in Sources */,
 				10B8262D29BC637200A11EA3 /* WebSocketManager.swift in Sources */,

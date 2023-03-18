@@ -28,3 +28,8 @@ enum Additional {
     static let RedPink = Color("RedPink")
     static let Yellow = Color("Yellow")
 }
+
+enum Secondary {
+    static let Dark = Color("Dark")
+    static let Default = Color("Default")
+}
