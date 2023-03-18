@@ -22,11 +22,34 @@ func getPlayerById (state: AppState, playerId: String?) -> Player? {
     return currentPlayer
 }
 
-func getInformationForRouting(_ state: AppState) -> DataForAuthInitialScreen {
-    let currentPlayer = getPlayerById(state: state, playerId: state.user?.id)
-    let hasLeftBarRoom = state.hasLeftBarRoom
+func getWaitingPlayerById (state: AppState, playerId: String?) -> WaitingPlayer? {
+    let players = state.playersWaiting;
 
-    return DataForAuthInitialScreen.init(hasLeftBarRoom: hasLeftBarRoom,  isPlayerInGame: currentPlayer?.id != nil)
+    let currentPlayer = players.first(where: {player -> Bool in
+        player.id == playerId
+    })
+
+    return currentPlayer
+}
+
+func getInformationForRouting(_ state: AppState) -> DataForAuthInitialScreen {
+    let playerInGame = getPlayerById(state: state, playerId: state.user?.id)
+    let playerInWaitingRoon = getWaitingPlayerById(state: state, playerId: state.user?.id)
+    let hasLeftBarRoom = state.hasLeftBarRoom
+    
+    if (playerInGame?.id != nil) {
+        return .gameRoom
+    }
+    
+    if (hasLeftBarRoom) {
+        return .barRoom
+    }
+    
+    if (playerInWaitingRoon != nil) {
+        return .waitingRoom
+    }
+    
+    return .barRoom
 }
 
 func getDataForSocket(_ state: AppState) -> [String: String?] {

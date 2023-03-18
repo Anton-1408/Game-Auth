@@ -18,7 +18,8 @@ struct ActionOneToOneCall {
 }
 
 
-struct DataForAuthInitialScreen {
-    var hasLeftBarRoom: Bool
-    var isPlayerInGame: Bool
+enum DataForAuthInitialScreen {
+    case waitingRoom
+    case barRoom
+    case gameRoom
 }
