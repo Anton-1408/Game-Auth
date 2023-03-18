@@ -19,7 +19,6 @@ struct ActionOneToOneCall {
 
 
 struct DataForAuthInitialScreen {
-    var isGameFinished: Bool
-    var isGameOver: Bool
+    var hasLeftBarRoom: Bool
     var isPlayerInGame: Bool
 }

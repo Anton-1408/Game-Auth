@@ -36,11 +36,11 @@ final class WebSocketTrigger {
     };
 
     public func takeTableCheck(isWaiting: Bool) -> Void {
-        var dataForCheck = getDataForSocket(store.state) as [String: Any];
+        var dataForCheckTable = getDataForSocket(store.state) as [String: Any];
         
-        dataForCheck["isWaiting"] = isWaiting
+        dataForCheckTable["waiting"] = isWaiting
         
-        webSocket.socket.emit(EventOfTrigger.checkTable, dataForCheck);
+        webSocket.socket.emit(EventOfTrigger.checkTable, dataForCheckTable);
     };
 
     public func takeCheck() -> Void {

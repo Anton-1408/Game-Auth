@@ -24,7 +24,7 @@ final class Store: ObservableObject {
         return instance!
     }
     
-    public func dispath(_ action: Action) {
+    public func dispatch(_ action: Action) {
         state = reducer(state: state, action: action)
     }
 }
@@ -37,6 +37,6 @@ let initialState = AppState.init(
     isCardOpened: false,
     dailyTalkController: .init(isAudio: true, isCamera: true),
     playersWaiting: [],
-    oneToOneCall: .init(informationCall: nil, isAccepted: false, hasCallIncoming: false, roomId: nil, isLeaved: false),
-    playerFoldMaked: false
+    playerFoldMaked: false,
+    hasLeftBarRoom: false
 )

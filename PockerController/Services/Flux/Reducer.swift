@@ -9,7 +9,7 @@ import Foundation
 
 func reducer(state: AppState, action: Action) -> AppState {
     var state = state
-    
+
     switch action {
         case .setAuthToken(let accessToken):
             state.authToken = accessToken
@@ -57,16 +57,9 @@ func reducer(state: AppState, action: Action) -> AppState {
                 finish: game.finish,
                 pause: game.pause
             )
-        case .leaveCall:
-            state.oneToOneCall.isLeaved = true
-        case .aceptCall(let roomId):
-            state.oneToOneCall.roomId = roomId
-        case .skipOneToOneRequest:
-            state.oneToOneCall = initialState.oneToOneCall
-        case .setOneToOneRequestBy(let oneToOneCall):
-            state.oneToOneCall.hasCallIncoming = oneToOneCall.isMyRequest
-            state.oneToOneCall.informationCall = oneToOneCall.informationCall
+        case .setFlagLeftToBarRoom(let hasLeftBarRoom):
+            state.hasLeftBarRoom = hasLeftBarRoom
         }
-    
+
     return state
 }

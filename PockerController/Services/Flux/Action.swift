@@ -18,15 +18,12 @@ enum Action {
     case setIsCamera(_ isCamera: Bool)
     case setIsCardOpened(_ IsCardOpened: Bool)
     case setFoldMaked(_ isFoldMaked: Bool)
-    case setWaitingPlayers(_ playersOfWaiting: [Player])
+    case setWaitingPlayers(_ playersOfWaiting: [WaitingPlayer])
     case setPlayers(_ players: [Player])
     case setIsGamePause(_ IsGamePause: Bool)
     case setIsGameOver(_ IsGameOver: Bool)
     case setLastAction(_ lastAction: LastAction?)
     case setProcessGame(_ game: GameData)
-    case leaveCall
-    case aceptCall(_ roomId: String)
-    case skipOneToOneRequest
-    case setOneToOneRequestBy(_ oneToOneCall: ActionOneToOneCall)
     case setGameId(_ gameId: String)
+    case setFlagLeftToBarRoom(_ hasLeftBarRoom: Bool)
 }

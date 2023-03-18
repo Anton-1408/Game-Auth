@@ -15,9 +15,9 @@ struct AppState {
     var timer: Int
     var isCardOpened: Bool
     var dailyTalkController: DailyTalkController
-    var playersWaiting: [Player]
-    var oneToOneCall: OneToOneCall
+    var playersWaiting: [WaitingPlayer]
     var playerFoldMaked: Bool
+    var hasLeftBarRoom: Bool
 }
 
 struct Auth {

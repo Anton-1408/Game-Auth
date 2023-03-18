@@ -68,7 +68,8 @@ struct GameData: Identifiable, Decodable {
     var turnround: Array<Player>
     var updatedAt: String
     var usedCards: Array<String>
-    var waitingPlayers: Array<Player>
+    var waitingPlayers: Array<WaitingPlayer>
+    var barroomPlayers: Array<BarRoomPlayer>
     var bigBlindPosition: Int?
     
     func getPlayersForRound(_ runninground: Int) -> [Player]  {
@@ -132,6 +133,35 @@ struct Player: Decodable, Identifiable {
     var pot: Int?
 }
 
+struct WaitingPlayer: Decodable, Identifiable {
+    var id: String
+    var firstName: String
+    var lastName: String
+    var name: String
+    var instagram: String
+    var email: String
+    var aboutMe: String
+    var avatar: String
+    var companyName: String
+    var createdAt: String
+    var meetingToken: String?
+    var role: String
+    var title: String
+    var twitter: String
+}
+
+struct BarRoomPlayer: Decodable, Identifiable {
+    var id: String
+    var instagram: String
+    var gameMeetingToken: String
+    var firstName: String
+    var email: String
+    var companyName: String
+    var avatar: String
+    var aboutMe: String
+    var createdAt: String
+}
+
 struct Error: Decodable {
     var title: String
     var message: String
@@ -142,4 +172,27 @@ struct InvEmails: Decodable {
     var email: String
     var name: String
     var userId: String
+}
+
+struct BarRoomLeft: Decodable {
+    var userId: String
+    var game: GameData
+}
+
+struct CardCheck: Decodable {
+    var userId: String
+    var gameId: String
+}
+
+struct Timer: Decodable {
+    var id: String
+    var maxtimer: Int
+    var playerchance: Int
+    var runninground: Int
+    var timerPlayer: Int
+}
+
+struct ActionPerformed: Decodable {
+    var id: String
+    var action: String
 }

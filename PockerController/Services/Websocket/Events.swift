@@ -19,11 +19,7 @@ enum EventOfListen {
     static let playerMicChange = "playerMicChange"
     static let notFound = "notFound"
     static let wtUpdate = "wt-update"
-    static let actionError = "actionError"
-    static let oneToOneRequest = "oneToOneRequest"
-    static let oneToOneRequestRejected = "oneToOneRequestRejected"
-    static let oneToOneRequestAccepted = "oneToOneRequestAccepted"
-    static let oneToOneRoomClosed = "oneToOneRoomClosed"
+    static let barRoomLeft = "barRoomLeft"
 }
 
 enum EventOfTrigger {
@@ -39,8 +35,4 @@ enum EventOfTrigger {
     static let playerTentativeAction = "playerTentativeAction"
     static let playerCameraChange = "playerCameraChange"
     static let playerMicChange = "playerMicChange"
-    static let oneToOneRequest = "oneToOneRequest"
-    static let oneToOneRequestAccept = "oneToOneRequestAccept"
-    static let oneToOneRequestReject = "oneToOneRequestReject"
-    static let oneToOneLeaveRequest = "oneToOneLeaveRequest"
 }

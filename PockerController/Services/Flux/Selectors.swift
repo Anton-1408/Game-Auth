@@ -14,20 +14,19 @@ func hasAuth(_ state: AppState) -> Bool {
 
 func getPlayerById (state: AppState, playerId: String?) -> Player? {
     let players = state.players;
-    
+
     let currentPlayer = players.first(where: {player -> Bool in
         player.id == playerId
     })
-    
+
     return currentPlayer
 }
 
-func getInformationForRouting(_ state: AppState) ->  DataForAuthInitialScreen {
+func getInformationForRouting(_ state: AppState) -> DataForAuthInitialScreen {
     let currentPlayer = getPlayerById(state: state, playerId: state.user?.id)
-    let isGameFinished = state.game.finish
-    let isGameOver = state.game.isGameOver
-    
-    return DataForAuthInitialScreen.init(isGameFinished: isGameFinished, isGameOver: isGameOver, isPlayerInGame: currentPlayer?.id != nil)
+    let hasLeftBarRoom = state.hasLeftBarRoom
+
+    return DataForAuthInitialScreen.init(hasLeftBarRoom: hasLeftBarRoom,  isPlayerInGame: currentPlayer?.id != nil)
 }
 
 func getDataForSocket(_ state: AppState) -> [String: String?] {
@@ -35,4 +34,8 @@ func getDataForSocket(_ state: AppState) -> [String: String?] {
         "gameId": state.game.id,
         "userId": state.user?.id
     ]
+}
+
+func getCurrentUserId(_ state: AppState) -> String? {
+    return state.user?.id
 }

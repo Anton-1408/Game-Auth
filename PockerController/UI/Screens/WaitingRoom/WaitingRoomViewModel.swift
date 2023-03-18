@@ -17,6 +17,6 @@ final class WaitingRoomViewModel: ObservableObject {
     }
     
     public func signOut() {
-        store.dispath(Action.signOut)
+        store.dispatch(Action.signOut)
     }
 }

@@ -32,19 +32,19 @@ final class QRCodeScannerWorker: ObservableObject {
                 self.isLoading = false
 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    self.store.dispath(.setAuthToken(
+                    self.store.dispatch(.setAuthToken(
                         .init(
                             expires: authToken.expires,
                             token: authToken.token
                         )
                     ))
-                    self.store.dispath(.setUser(
+                    self.store.dispatch(.setUser(
                         .init(
                             id: userId,
                             name: userName
                         )
                     ))
-                    self.store.dispath(.setGameId(gameId))
+                    self.store.dispatch(.setGameId(gameId))
                 }
             }
         )

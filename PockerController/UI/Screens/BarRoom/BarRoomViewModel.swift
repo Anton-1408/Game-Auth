@@ -17,6 +17,6 @@ final class BarRoomViewModel: ObservableObject {
     }
     
     public func signOut() {
-        store.dispath(Action.signOut)
+        store.dispatch(Action.signOut)
     }
 }

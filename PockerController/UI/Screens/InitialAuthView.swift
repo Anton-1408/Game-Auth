@@ -15,13 +15,13 @@ struct InitialAuthView: View {
         let data = getInformationForRouting(store.state)
 
         if (data.isPlayerInGame) {
-            if (data.isGameOver || data.isGameFinished) {
+            GameRoomAssembly().build()
+        } else {
+            if (data.hasLeftBarRoom) {
                 BarRoomAssembly().build()
             } else {
-                GameRoomAssembly().build()
+                WaitingRoomAssembly().build()
             }
-        } else {
-            WaitingRoomAssembly().build()
         }
     }
 }
