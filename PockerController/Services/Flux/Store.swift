@@ -8,7 +8,13 @@
 import Foundation
 
 final class Store: ObservableObject {
-    @Published private(set) var state: AppState
+    private var handlerSubscribe: HandlerSubscribe?
+    
+    @Published private(set) var state: AppState {
+        didSet {
+            handlerSubscribe?(state)
+        }
+    }
     
     private static var instance: Store?
     
@@ -27,6 +33,10 @@ final class Store: ObservableObject {
     public func dispatch(_ action: Action) {
         state = reducer(state: state, action: action)
     }
+    
+    public func subscribe(handler: @escaping HandlerSubscribe) {
+        self.handlerSubscribe = handler
+    }
 }
 
 let initialState = AppState.init(
@@ -40,3 +50,5 @@ let initialState = AppState.init(
     playerFoldMaked: false,
     hasLeftBarRoom: false
 )
+
+typealias HandlerSubscribe = (_ state: AppState) -> Void

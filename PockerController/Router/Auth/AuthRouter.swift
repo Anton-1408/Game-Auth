@@ -6,6 +6,14 @@ final class AuthRouter: ObservableObject {
     
     @Published var path = [AuthRoute]()
     
+    private var store: () = Store.getStore().subscribe {state in
+        let isAuth = hasAuth(state)
+        
+        if (!isAuth) {
+            AuthRouter.shared.goToRoot()
+        }
+    }
+    
     func goToTheWaitingRoom() {
         path.append(.waitingRoom)
     }

@@ -6,6 +6,14 @@ final class GuestRouter: ObservableObject {
     
     @Published var path = [GuestRoute]()
     
+    private var store: () = Store.getStore().subscribe {state in
+        let isAuth = hasAuth(state)
+        
+        if (isAuth) {
+            GuestRouter.shared.goToRoot()
+        }
+    }
+    
     func goToWelcome() {
         path.append(.welcome)
     }

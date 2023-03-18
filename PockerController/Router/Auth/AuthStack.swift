@@ -9,7 +9,7 @@ struct AuthStack: View {
     var body: some View {
         ZStack {
           if (!websocketWorker.isGameLoaded) {
-              Spinner(typeSpinner: .LineSpinner)
+              Spinner(typeSpinner: .WhiteSpinner)
           } else {
              NavigationStack(path: $router.path) {
                InitialAuthView()
