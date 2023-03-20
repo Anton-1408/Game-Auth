@@ -70,4 +70,20 @@ final class WebSocketTrigger {
         
         webSocket.socket.emit(EventOfTrigger.playerTentativeAction, dataForTentativeAction);
     };
+    
+    public func changeAudio(isAudio: Bool) -> Void {
+        var data = getDataForSocket(store.state) as [String: Any];
+        
+        data["isAudio"] = isAudio
+        
+        webSocket.socket.emit(EventOfTrigger.playerMicChange, data);
+    }
+    
+    public func changeCamera(isCamera: Bool) -> Void {
+        var data = getDataForSocket(store.state) as [String: Any];
+        
+        data["isCamera"] = isCamera
+        
+        webSocket.socket.emit(EventOfTrigger.playerCameraChange, data);
+    }
 }

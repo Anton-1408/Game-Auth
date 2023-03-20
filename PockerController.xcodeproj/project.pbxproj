@@ -83,6 +83,8 @@
 		10AEBF7629B857F000439B51 /* QRCodeScannerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */; };
 		10AEBF7B29B876B200439B51 /* Selectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AEBF7A29B876B200439B51 /* Selectors.swift */; };
 		10B530DC29C5D0A100503187 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B530DB29C5D0A100503187 /* IconButton.swift */; };
+		10B530DE29C89F8500503187 /* DailyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B530DD29C89F8500503187 /* DailyController.swift */; };
+		10B530E129C8A10200503187 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B530E029C8A10200503187 /* Header.swift */; };
 		10B8261129BA210800A11EA3 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261029BA210800A11EA3 /* Types.swift */; };
 		10B8261329BB7A1100A11EA3 /* WaitingRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */; };
 		10B8261529BB7A3200A11EA3 /* WaitingRoomAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */; };
@@ -222,6 +224,8 @@
 		10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerWorker.swift; sourceTree = "<group>"; };
 		10AEBF7A29B876B200439B51 /* Selectors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selectors.swift; sourceTree = "<group>"; };
 		10B530DB29C5D0A100503187 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		10B530DD29C89F8500503187 /* DailyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyController.swift; sourceTree = "<group>"; };
+		10B530E029C8A10200503187 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		10B8261029BA210800A11EA3 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomViewModel.swift; sourceTree = "<group>"; };
 		10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomAssembly.swift; sourceTree = "<group>"; };
@@ -448,6 +452,7 @@
 		10AEBF7729B86EDE00439B51 /* WaitingRoom */ = {
 			isa = PBXGroup;
 			children = (
+				10B530DF29C8A0F100503187 /* Components */,
 				10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */,
 				10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */,
 				10B8261629BB7C3500A11EA3 /* WaitingRoomView.swift */,
@@ -473,6 +478,14 @@
 				10B8261C29BB7D1900A11EA3 /* BarRoomAssembly.swift */,
 			);
 			path = BarRoom;
+			sourceTree = "<group>";
+		};
+		10B530DF29C8A0F100503187 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				10B530E029C8A10200503187 /* Header.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		10BA0286299A7C5500A1739F = {
@@ -555,6 +568,7 @@
 			children = (
 				10BA02D829A1E0EF00A1739F /* Buttons */,
 				10A1FFEB29A8AA5F00CB08ED /* Spinner.swift */,
+				10B530DD29C89F8500503187 /* DailyController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -975,7 +989,9 @@
 				10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */,
 				10B8261F29BB7E5B00A11EA3 /* GameRoomView.swift in Sources */,
 				10B8262529BC335B00A11EA3 /* InitialAuthView.swift in Sources */,
+				10B530DE29C89F8500503187 /* DailyController.swift in Sources */,
 				10BA02D529A0B23400A1739F /* ShemeColor.swift in Sources */,
+				10B530E129C8A10200503187 /* Header.swift in Sources */,
 				10B8261D29BB7D1900A11EA3 /* BarRoomAssembly.swift in Sources */,
 				10B8261329BB7A1100A11EA3 /* WaitingRoomViewModel.swift in Sources */,
 				10BA02EF29A2143900A1739F /* AuthRoute.swift in Sources */,

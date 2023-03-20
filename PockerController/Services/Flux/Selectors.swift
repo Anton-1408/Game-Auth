@@ -62,3 +62,7 @@ func getDataForSocket(_ state: AppState) -> [String: String?] {
 func getCurrentUserId(_ state: AppState) -> String? {
     return state.user?.id
 }
+
+func getDailyController(_ state: AppState) -> DailyTalkController {
+    return state.dailyTalkController
+}

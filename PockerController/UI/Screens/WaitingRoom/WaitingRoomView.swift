@@ -9,10 +9,18 @@ import SwiftUI
 
 struct WaitingRoomView: View {
     @ObservedObject var viewModel: WaitingRoomViewModel;
+    @ObservedObject var store = Store.getStore()
+
     var body: some View {
         VStack {
-            Text("Waiting Room")
+            Header(handlerSignOut: {
+                store.dispatch(.signOut)
+            })
+            .padding(.top, 16)
+            Spacer()
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(GrayScale.Black)
     }
     
 }

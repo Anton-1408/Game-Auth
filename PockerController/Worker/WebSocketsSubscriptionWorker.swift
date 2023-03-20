@@ -15,6 +15,14 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
 
     @Published var isGameLoaded = false
     
+    private var listennerForDisconnect: () = Store.getStore().subscribe {state in
+        let isAuth = hasAuth(state)
+
+        if (!isAuth) {
+            WebSocketManager.getInstance().disconnect()
+        }
+    }
+    
     public func subscribe() {
         self.connect()
         self.notInvited()
@@ -34,8 +42,6 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
         
         webSocket.connect()
     }
-    
-    public func unSubscribe() {}
     
     private func connect() {
         webSocket.socket.on(EventOfListen.connect) {data, acc in
