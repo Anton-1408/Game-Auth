@@ -85,6 +85,7 @@
 		10B530DC29C5D0A100503187 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B530DB29C5D0A100503187 /* IconButton.swift */; };
 		10B530DE29C89F8500503187 /* DailyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B530DD29C89F8500503187 /* DailyController.swift */; };
 		10B530E129C8A10200503187 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B530E029C8A10200503187 /* Header.swift */; };
+		10B530E329C9D01F00503187 /* ContainerUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B530E229C9D01F00503187 /* ContainerUser.swift */; };
 		10B8261129BA210800A11EA3 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261029BA210800A11EA3 /* Types.swift */; };
 		10B8261329BB7A1100A11EA3 /* WaitingRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */; };
 		10B8261529BB7A3200A11EA3 /* WaitingRoomAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */; };
@@ -226,6 +227,7 @@
 		10B530DB29C5D0A100503187 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		10B530DD29C89F8500503187 /* DailyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyController.swift; sourceTree = "<group>"; };
 		10B530E029C8A10200503187 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		10B530E229C9D01F00503187 /* ContainerUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerUser.swift; sourceTree = "<group>"; };
 		10B8261029BA210800A11EA3 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		10B8261229BB7A1100A11EA3 /* WaitingRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomViewModel.swift; sourceTree = "<group>"; };
 		10B8261429BB7A3200A11EA3 /* WaitingRoomAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomAssembly.swift; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				10B530E029C8A10200503187 /* Header.swift */,
+				10B530E229C9D01F00503187 /* ContainerUser.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1030,6 +1033,7 @@
 				10BA02E729A211C800A1739F /* AuthRouter.swift in Sources */,
 				10B8261129BA210800A11EA3 /* Types.swift in Sources */,
 				10A1FFEC29A8AA5F00CB08ED /* Spinner.swift in Sources */,
+				10B530E329C9D01F00503187 /* ContainerUser.swift in Sources */,
 				10BA02DC29A1F1B700A1739F /* BackgroundClearView.swift in Sources */,
 				10A1FFE529A87E8400CB08ED /* QRCodeScannerAssembly.swift in Sources */,
 				10AEBF6E29B8285300439B51 /* AppState.swift in Sources */,

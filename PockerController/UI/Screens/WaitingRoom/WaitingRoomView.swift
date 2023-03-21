@@ -6,18 +6,32 @@
 //
 
 import SwiftUI
+import WrappingHStackLayout
 
 struct WaitingRoomView: View {
     @ObservedObject var viewModel: WaitingRoomViewModel;
     @ObservedObject var store = Store.getStore()
 
     var body: some View {
+        let waitingPlayers = getWaitingPlayers(store.state)
+        
         VStack {
             Header(handlerSignOut: {
                 store.dispatch(.signOut)
             })
             .padding(.top, 16)
-            Spacer()
+            
+            ScrollView {
+                WrappingHStack(alignment: .leading) {
+                    ForEach(waitingPlayers, id: \.?.id) { waitingPlayer in
+                            ContainerUser(
+                                handlerProfileClick: {},
+                                name: waitingPlayer?.name,
+                                avatar: waitingPlayer?.avatar
+                            )
+                    }
+                }
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(GrayScale.Black)

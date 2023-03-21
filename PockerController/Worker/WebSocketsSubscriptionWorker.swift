@@ -14,7 +14,7 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
     private let store = Store.getStore()
 
     @Published var isGameLoaded = false
-    
+
     private var listennerForDisconnect: () = Store.getStore().subscribe {state in
         let isAuth = hasAuth(state)
 
@@ -22,7 +22,7 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
             WebSocketManager.getInstance().disconnect()
         }
     }
-    
+
     public func subscribe() {
         self.connect()
         self.notInvited()
@@ -72,21 +72,19 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
                     self.store.dispatch(.setFlagLeftToBarRoom(true))
                 }
                 
-                if (!game.gamestart) {
+                if (game.isReset) {
                     self.store.dispatch(.resetTimer)
                     self.store.dispatch(.setLastAction(nil))
                     self.store.dispatch(.setIsGamePause(false))
                 }
-                
-                
             } catch {
                 print("error", error)
             }
-            
+
             self.isGameLoaded = true
         }
     }
-    
+
     private func wtUpdate() {
         webSocket.socket.on(EventOfListen.wtUpdate) { data, acc in
             do {
@@ -240,6 +238,7 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
                 self.store.dispatch(.setPlayers(playersForRound))
                 self.store.dispatch(.setWaitingPlayers(game.waitingPlayers))
                 self.store.dispatch(.setProcessGame(game))
+                self.store.dispatch(.setLastAction(nil))
             } catch {
                 print("error", error)
             }

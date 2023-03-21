@@ -66,3 +66,15 @@ func getCurrentUserId(_ state: AppState) -> String? {
 func getDailyController(_ state: AppState) -> DailyTalkController {
     return state.dailyTalkController
 }
+
+func getWaitingPlayers(_ state: AppState) -> [WaitingPlayer?] {
+    var waitingPlayers = state.playersWaiting as [WaitingPlayer?]
+    let maxPlayers = 8
+    let differentSize = 8 - waitingPlayers.count
+    
+    for _ in 1...differentSize {
+        waitingPlayers.append(nil)
+    }
+    
+    return waitingPlayers
+}
