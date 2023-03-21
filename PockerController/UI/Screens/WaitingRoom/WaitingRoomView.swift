@@ -14,6 +14,7 @@ struct WaitingRoomView: View {
 
     var body: some View {
         let waitingPlayers = getWaitingPlayers(store.state)
+        let canGoToGamePanel = hasUserInGame(store.state)
         
         VStack {
             Header(handlerSignOut: {
@@ -35,6 +36,11 @@ struct WaitingRoomView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(GrayScale.Black)
+        .onChange(of: canGoToGamePanel) { isNavigate in
+            if (isNavigate) {
+                viewModel.goToGamePanel()
+            }
+        }
     }
     
 }

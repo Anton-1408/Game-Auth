@@ -19,4 +19,8 @@ final class WaitingRoomViewModel: ObservableObject {
     public func signOut() {
         store.dispatch(Action.signOut)
     }
+    
+    public func goToGamePanel() {
+        router.goToTheGameRoom()
+    }
 }

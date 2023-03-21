@@ -22,6 +22,17 @@ func getPlayerById (state: AppState, playerId: String?) -> Player? {
     return currentPlayer
 }
 
+func hasUserInGame (_ state: AppState) -> Bool {
+    let players = state.players;
+    let userId = state.user?.id
+
+    let currentPlayer = players.first(where: {player -> Bool in
+        player.id == userId
+    })
+
+    return currentPlayer != nil
+}
+
 func getWaitingPlayerById (state: AppState, playerId: String?) -> WaitingPlayer? {
     let players = state.playersWaiting;
 
