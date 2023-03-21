@@ -196,3 +196,15 @@ struct ActionPerformed: Decodable {
     var id: String
     var action: String
 }
+
+struct PlayerCameraChange: Decodable {
+  var gameId: String
+  var userId: String
+  var isVideo: Bool
+}
+
+struct PlayerMicrophoneChange: Decodable {
+  var gameId: String
+  var userId: String
+  var isAudio: Bool
+}

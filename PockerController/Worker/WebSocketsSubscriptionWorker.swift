@@ -39,6 +39,8 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
         self.roomResume()
         self.roomPause()
         self.barRoom()
+        self.micChange()
+        self.videoChange()
         
         webSocket.connect()
     }
@@ -273,6 +275,40 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
                 print("error", error)
             }
             
+        }
+    }
+    
+    private func micChange() {
+        webSocket.socket.on(EventOfListen.playerMicChange) {data, acc in
+           let userId = getCurrentUserId(self.store.state)
+           do {
+                let response = data[0] as? [String: Any];
+                
+                let data = try JSONDecoder().decode(PlayerMicrophoneChange.self, from: JSONSerialization.data(withJSONObject: response ?? []))
+                
+                if (data.userId == userId) {
+                    self.store.dispatch(.setIsAudio(data.isAudio))
+                }
+            } catch {
+                print("error", error)
+            }
+        }
+    }
+    
+    private func videoChange() {
+        webSocket.socket.on(EventOfListen.playerCameraChange) {data, acc in
+            let userId = getCurrentUserId(self.store.state)
+            do {
+                 let response = data[0] as? [String: Any];
+                 
+                 let data = try JSONDecoder().decode(PlayerCameraChange.self, from: JSONSerialization.data(withJSONObject: response ?? []))
+                 
+                 if (data.userId == userId) {
+                     self.store.dispatch(.setIsCamera(data.isVideo))
+                 }
+             } catch {
+                 print("error", error)
+             }
         }
     }
 }

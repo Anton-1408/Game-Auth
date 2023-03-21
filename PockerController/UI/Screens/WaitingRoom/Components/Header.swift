@@ -29,7 +29,7 @@ struct Header: View {
             Spacer()
             DailyController(
                 handleMicrophonePress: {
-                    websocketTrigger.changeCamera(isCamera: !dailyTalkController.isCamera)
+                    websocketTrigger.changeAudio(isAudio: !dailyTalkController.isAudio)
                 },
                 handleCameraPress: {
                     websocketTrigger.changeCamera(isCamera: !dailyTalkController.isCamera)

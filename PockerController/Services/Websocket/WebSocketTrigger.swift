@@ -82,7 +82,7 @@ final class WebSocketTrigger {
     public func changeCamera(isCamera: Bool) -> Void {
         var data = getDataForSocket(store.state) as [String: Any];
         
-        data["isCamera"] = isCamera
+        data["isVideo"] = isCamera
         
         webSocket.socket.emit(EventOfTrigger.playerCameraChange, data);
     }
