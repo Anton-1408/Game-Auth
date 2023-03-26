@@ -78,6 +78,7 @@ final class WebSocketsSubscriptionWorker: ObservableObject {
                     self.store.dispatch(.resetTimer)
                     self.store.dispatch(.setLastAction(nil))
                     self.store.dispatch(.setIsGamePause(false))
+                    self.store.dispatch(.setFoldMaked(false))
                 }
             } catch {
                 print("error", error)

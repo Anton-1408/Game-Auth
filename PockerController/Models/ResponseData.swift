@@ -208,3 +208,29 @@ struct PlayerMicrophoneChange: Decodable {
   var userId: String
   var isAudio: Bool
 }
+
+struct ResponseGetAllPlayers: Decodable {
+    var status: Int
+    var success: Bool
+    var users: [PlayerInfo]
+}
+
+struct PlayerInfo: Decodable {
+    var aboutMe: String
+    var avatar: String
+    var companyName: String
+    var createdAt: String
+    var email: String
+    var firstName: String
+    var id: String
+    var instagram: String
+    var isActive: Bool
+    var isEmailVerified: Bool
+    var isLinkPublic: Bool
+    var lastName: String
+    var name: String
+    var phoneNumber: String
+    var role: String
+    var twitter: String
+    var updatedAt: String
+}

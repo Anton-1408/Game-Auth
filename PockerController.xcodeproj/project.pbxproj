@@ -61,6 +61,8 @@
 		1094007B29A506AA00358EE8 /* JS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1094007329A506AA00358EE8 /* JS.png */; };
 		1094007D29A5072700358EE8 /* BackSide.png in Resources */ = {isa = PBXBuildFile; fileRef = 1094007C29A5072700358EE8 /* BackSide.png */; };
 		1094008129A508BB00358EE8 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094008029A508BB00358EE8 /* Events.swift */; };
+		1094386529CB1D45002525EA /* ProfileModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094386429CB1D45002525EA /* ProfileModal.swift */; };
+		1094386729CEBD2C002525EA /* PlayerInfoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094386629CEBD2C002525EA /* PlayerInfoWorker.swift */; };
 		10A1FFD929A739B900CB08ED /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFD829A739B900CB08ED /* QRCodeViewController.swift */; };
 		10A1FFDB29A874EE00CB08ED /* RoomJoingToTheGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFDA29A874EE00CB08ED /* RoomJoingToTheGameView.swift */; };
 		10A1FFDE29A8794D00CB08ED /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A1FFDD29A8794D00CB08ED /* WelcomeViewModel.swift */; };
@@ -202,6 +204,8 @@
 		1094007329A506AA00358EE8 /* JS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JS.png; sourceTree = "<group>"; };
 		1094007C29A5072700358EE8 /* BackSide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackSide.png; sourceTree = "<group>"; };
 		1094008029A508BB00358EE8 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		1094386429CB1D45002525EA /* ProfileModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModal.swift; sourceTree = "<group>"; };
+		1094386629CEBD2C002525EA /* PlayerInfoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoWorker.swift; sourceTree = "<group>"; };
 		10A1FFD829A739B900CB08ED /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		10A1FFDA29A874EE00CB08ED /* RoomJoingToTheGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomJoingToTheGameView.swift; sourceTree = "<group>"; };
 		10A1FFDD29A8794D00CB08ED /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
@@ -375,6 +379,7 @@
 			children = (
 				10AEBF7529B857F000439B51 /* QRCodeScannerWorker.swift */,
 				10B8262629BC491D00A11EA3 /* WebSocketsSubscriptionWorker.swift */,
+				1094386629CEBD2C002525EA /* PlayerInfoWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -487,6 +492,7 @@
 			children = (
 				10B530E029C8A10200503187 /* Header.swift */,
 				10B530E229C9D01F00503187 /* ContainerUser.swift */,
+				1094386429CB1D45002525EA /* ProfileModal.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -987,6 +993,7 @@
 				10B8261729BB7C3500A11EA3 /* WaitingRoomView.swift in Sources */,
 				10B8261929BB7CF900A11EA3 /* BarRoomView.swift in Sources */,
 				10AEBF6C29B8283C00439B51 /* Action.swift in Sources */,
+				1094386529CB1D45002525EA /* ProfileModal.swift in Sources */,
 				10BA02F729A2298A00A1739F /* RootStack.swift in Sources */,
 				10BA02D729A10C0700A1739F /* Typography.swift in Sources */,
 				10BA02E929A211D600A1739F /* GuestRouter.swift in Sources */,
@@ -1016,6 +1023,7 @@
 				10B8262129BB7E6700A11EA3 /* GameRoomViewModel.swift in Sources */,
 				10A1FFE129A87AD000CB08ED /* QrCodeScannerViewModel.swift in Sources */,
 				10A1FFE329A87D9000CB08ED /* WelcomeAssembly.swift in Sources */,
+				1094386729CEBD2C002525EA /* PlayerInfoWorker.swift in Sources */,
 				10A1FFDE29A8794D00CB08ED /* WelcomeViewModel.swift in Sources */,
 				10A1FFD929A739B900CB08ED /* QRCodeViewController.swift in Sources */,
 				10B530DC29C5D0A100503187 /* IconButton.swift in Sources */,

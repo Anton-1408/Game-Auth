@@ -11,4 +11,5 @@ enum Typography {
     static let Body_2_Gilroy_Medium_14px_16 = Font.custom("Gilroy-Medium", size: 14)
     static let Caption_1_Gilroy_Regular_12px_12 = Font.custom("Gilroy-Regular", size: 12)
     static let Subhead_1_Hardware_Condensed_26px_32 = Font.custom("DDCHardware-Condensed", size: 26)
+    static let Body_1_Hardware_Condensed_16px_20 = Font.custom("DDCHardware-Condensed", size: 16)
 }

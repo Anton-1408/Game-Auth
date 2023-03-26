@@ -33,3 +33,7 @@ enum Secondary {
     static let Dark = Color("Dark")
     static let Default = Color("Default")
 }
+
+enum Transition {
+    static let ModalBackground = Color("BackgroundModal")
+}

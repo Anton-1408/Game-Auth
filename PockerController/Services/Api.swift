@@ -10,7 +10,7 @@ import Foundation
 class Api {
     private static var instance: Api?
 
-    var authToken: String?
+    var authToken: String = ""
     
     private var urlSession = URLSession.shared
     private var api: String = ""
@@ -87,5 +87,54 @@ class Api {
         }).resume()
     }
 
-    public func getInformationForPlayers() async {}
+    public func getInformationForPlayers(playerId: String, handleError: @escaping (_ error: Error) -> Void, handleSuccess: @escaping (_ result: PlayerInfo) -> Void) async {
+        guard let url = URL(string: "\(api)/users/getAllGamePlayers") else {
+            return
+        }
+        
+        let params: Array<String> = [playerId]
+        var request = URLRequest(url: url)
+        
+        guard let body = try? JSONEncoder().encode(["userIds": params]) else {
+            return
+        }
+
+        request.httpMethod = "POST"
+        request.httpBody = body
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("Bearer \(self.authToken)", forHTTPHeaderField: "authorization")
+        
+        urlSession.dataTask(with: request, completionHandler: { data, response, error in
+            guard let data = data else {
+                return
+            }
+            
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+
+                let hasError = json?["code"]
+
+                if (hasError != nil) {
+                    let error = try JSONDecoder().decode(Error.self, from: data)
+
+                    handleError(error)
+                } else {
+                    let playerData = try JSONDecoder().decode(ResponseGetAllPlayers.self, from: data)
+
+                    handleSuccess(playerData.users[0])
+                }
+                
+            } catch {
+                print("error", error)
+                
+                handleError(
+                    .init(
+                        title: DefaultError.title,
+                        message: DefaultError.message
+                    )
+                )
+            }
+        }).resume()
+    }
 }

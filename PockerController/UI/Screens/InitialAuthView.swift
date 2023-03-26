@@ -21,6 +21,8 @@ struct InitialAuthView: View {
                 WaitingRoomAssembly().build()
             case .gameRoom:
                 GameRoomAssembly().build()
+            default:
+                Spinner(typeSpinner: .WhiteSpinner)
         }
     }
 }
