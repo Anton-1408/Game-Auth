@@ -45,7 +45,7 @@ struct ProfileModal: View {
                                 
                             }
                             VStack(alignment: .leading) {
-                                Text("\(playerInfo.data?.firstName ?? "") \(playerInfo.data?.lastName ?? "")")
+                                Text("\(playerInfo.data?.name ?? "")")
                                     .font(Typography.Body_1_Hardware_Regular_16px_20)
                                     .foregroundColor(GrayScale.White)
                                     .padding(.bottom, 1)
@@ -94,7 +94,7 @@ struct ProfileModal: View {
                             Spacer()
                             VStack {
                                 if (playerInfo.data?.instagram.isEmpty == false) {
-                                    HStack{
+                                    Button(action: {}){
                                         Image("Instagram")
                                         Text(playerInfo.data?.instagram ?? "")
                                             .font(Typography.Body_2_Gilroy_Regular_14px_16)
@@ -102,7 +102,7 @@ struct ProfileModal: View {
                                     }
                                 }
                                 if (playerInfo.data?.twitter.isEmpty == false) {
-                                    HStack {
+                                    Button(action: {}) {
                                         Image("Twitter")
                                         Text(playerInfo.data?.twitter ?? "")
                                             .font(Typography.Body_2_Gilroy_Regular_14px_16)

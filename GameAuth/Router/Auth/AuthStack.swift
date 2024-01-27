@@ -3,7 +3,6 @@ import SwiftUI
 
 struct AuthStack: View {
     @ObservedObject var router = AuthRouter.shared
-    @StateObject var store = Store.getStore()
     @StateObject var websocketWorker = WebSocketsSubscriptionWorker();
 
     var body: some View {
@@ -26,7 +25,7 @@ struct AuthStack: View {
                                   .navigationBarHidden(true)
                     }
                  }
-             }.environmentObject(store)
+             }
           }
         }
         .task {

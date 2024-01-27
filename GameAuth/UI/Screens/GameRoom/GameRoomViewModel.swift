@@ -18,4 +18,12 @@ final class GameRoomViewModel: ObservableObject {
     public func signOut() {
         store.dispatch(Action.signOut)
     }
+    
+    public func goToTheBarRoom() {
+        self.router.goToTheBarRoom()
+    }
+    
+    public func goToTheWaitingRoom() {
+        self.router.goToTheWaitingRoom()
+    }
 }

@@ -1,13 +1,32 @@
 PODS:
   - AlertToast (1.3.9)
+  - Cloudpayments (1.3.3):
+    - CloudpaymentsNetworking
+    - YandexLoginSDK
+    - YandexPaySDK/Dynamic (~> 1.3.9)
+  - CloudpaymentsNetworking (1.0.1)
   - MercariQRScanner (1.9.0)
+  - PromiseKit/CorePromise (6.18.1)
   - Socket.IO-Client-Swift (16.0.1):
     - Starscream (~> 4.0)
   - Starscream (4.0.4)
   - WrappingHStackLayout (0.1.2)
+  - YandexLoginSDK (2.1.1)
+  - YandexMobileMetrica/Dynamic (4.5.2):
+    - YandexMobileMetrica/Dynamic/Core (= 4.5.2)
+    - YandexMobileMetrica/Dynamic/Crashes (= 4.5.2)
+  - YandexMobileMetrica/Dynamic/Core (4.5.2)
+  - YandexMobileMetrica/Dynamic/Crashes (4.5.2):
+    - YandexMobileMetrica/Dynamic/Core
+  - YandexPaySDK/Dynamic (1.3.9):
+    - PromiseKit/CorePromise (~> 6.0)
+    - YandexLoginSDK (~> 2.1.1)
+    - YandexMobileMetrica/Dynamic
 
 DEPENDENCIES:
   - AlertToast
+  - Cloudpayments (from `https://github.com/cloudpayments/CloudPayments-SDK-iOS`, tag `1.3.3`)
+  - CloudpaymentsNetworking (from `https://github.com/cloudpayments/CloudPayments-SDK-iOS`, tag `1.3.3`)
   - MercariQRScanner (from `https://github.com/Looking4Cache/QRScanner.git`)
   - Socket.IO-Client-Swift
   - WrappingHStackLayout (~> 0.1.2)
@@ -15,26 +34,48 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AlertToast
+    - PromiseKit
     - Socket.IO-Client-Swift
     - Starscream
     - WrappingHStackLayout
+    - YandexLoginSDK
+    - YandexMobileMetrica
+    - YandexPaySDK
 
 EXTERNAL SOURCES:
+  Cloudpayments:
+    :git: https://github.com/cloudpayments/CloudPayments-SDK-iOS
+    :tag: 1.3.3
+  CloudpaymentsNetworking:
+    :git: https://github.com/cloudpayments/CloudPayments-SDK-iOS
+    :tag: 1.3.3
   MercariQRScanner:
     :git: https://github.com/Looking4Cache/QRScanner.git
 
 CHECKOUT OPTIONS:
+  Cloudpayments:
+    :git: https://github.com/cloudpayments/CloudPayments-SDK-iOS
+    :tag: 1.3.3
+  CloudpaymentsNetworking:
+    :git: https://github.com/cloudpayments/CloudPayments-SDK-iOS
+    :tag: 1.3.3
   MercariQRScanner:
     :commit: a6cf77d6a38446f4715170af841bca89cc01b8b2
     :git: https://github.com/Looking4Cache/QRScanner.git
 
 SPEC CHECKSUMS:
   AlertToast: e8db15da727beff75500bcf33a78cd617f408fa1
+  Cloudpayments: fccde9957c511daf24748378bb88da86bbab510f
+  CloudpaymentsNetworking: c888643c447d2ba487ff47300c9ed570f07d41d6
   MercariQRScanner: e5aea873969af59b09b4cc411fc1c5b6293dba44
+  PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
   Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   WrappingHStackLayout: 50c5ec7184e4074ef09e344a5dfbcee4067969e9
+  YandexLoginSDK: ad9a07aca36a7748353af17c9cbbf2b83be9ba26
+  YandexMobileMetrica: f5368ee93f286c793d73b58da00929babfc897c1
+  YandexPaySDK: eb54423e0466cf88096cce9903a011c5a87f91af
 
-PODFILE CHECKSUM: 3f7dfbff89b68cdaf8033949a2aac447f5da2937
+PODFILE CHECKSUM: 0cc0604292681158c1cf48233d250edcc23955f4
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

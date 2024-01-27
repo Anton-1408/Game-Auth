@@ -1,6 +1,14 @@
 ${PODS_ROOT}/Target Support Files/Pods-PockerController-PockerControllerUITests/Pods-PockerController-PockerControllerUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AlertToast/AlertToast.framework
+${BUILT_PRODUCTS_DIR}/Cloudpayments/Cloudpayments.framework
+${BUILT_PRODUCTS_DIR}/CloudpaymentsNetworking/CloudpaymentsNetworking.framework
 ${BUILT_PRODUCTS_DIR}/MercariQRScanner/MercariQRScanner.framework
+${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework
 ${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework
 ${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
 ${BUILT_PRODUCTS_DIR}/WrappingHStackLayout/WrappingHStackLayout.framework
+${BUILT_PRODUCTS_DIR}/YandexLoginSDK/YandexLoginSDK.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexMobileMetrica/Dynamic/Core/YandexMobileMetrica.framework/YandexMobileMetrica
+${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexMobileMetrica/Dynamic/Crashes/YandexMobileMetricaCrashes.framework/YandexMobileMetricaCrashes
+${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexPaySDK/Dynamic/YandexPaySDK.framework/YandexPaySDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexPaySDK/Dynamic/XPlatPaySDK.framework/XPlatPaySDK

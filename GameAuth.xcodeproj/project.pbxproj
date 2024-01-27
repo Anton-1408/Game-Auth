@@ -246,13 +246,13 @@
 		10B8262629BC491D00A11EA3 /* WebSocketsSubscriptionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketsSubscriptionWorker.swift; sourceTree = "<group>"; };
 		10B8262A29BC635600A11EA3 /* WebSocketTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketTrigger.swift; sourceTree = "<group>"; };
 		10B8262C29BC637200A11EA3 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
-		10BA028F299A7C5500A1739F /* PockerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PockerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BA028F299A7C5500A1739F /* GameAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA0292299A7C5500A1739F /* PockerControllerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerApp.swift; sourceTree = "<group>"; };
 		10BA0296299A7C5600A1739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BA0299299A7C5600A1739F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		10BA029F299A7C5700A1739F /* PockerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PockerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BA029F299A7C5700A1739F /* GameAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA02A3299A7C5700A1739F /* PockerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerTests.swift; sourceTree = "<group>"; };
-		10BA02A9299A7C5700A1739F /* PockerControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PockerControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BA02A9299A7C5700A1739F /* GameAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BA02AD299A7C5700A1739F /* PockerControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerUITests.swift; sourceTree = "<group>"; };
 		10BA02AF299A7C5700A1739F /* PockerControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PockerControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		10BA02C1299A835200A1739F /* DDCHardware-Compressed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DDCHardware-Compressed.otf"; sourceTree = "<group>"; };
@@ -394,6 +394,13 @@
 			path = Websocket;
 			sourceTree = "<group>";
 		};
+		1094386829D05E11002525EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		10A1FFDC29A8792C00CB08ED /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +477,7 @@
 		10AEBF7829B86EF000439B51 /* GameRoom */ = {
 			isa = PBXGroup;
 			children = (
+				1094386829D05E11002525EA /* Components */,
 				10B8261E29BB7E5B00A11EA3 /* GameRoomView.swift */,
 				10B8262029BB7E6700A11EA3 /* GameRoomViewModel.swift */,
 				10B8262229BB7E9A00A11EA3 /* GameRoomAssembly.swift */,
@@ -512,9 +520,9 @@
 		10BA0290299A7C5500A1739F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				10BA028F299A7C5500A1739F /* PockerController.app */,
-				10BA029F299A7C5700A1739F /* PockerControllerTests.xctest */,
-				10BA02A9299A7C5700A1739F /* PockerControllerUITests.xctest */,
+				10BA028F299A7C5500A1739F /* GameAuth.app */,
+				10BA029F299A7C5700A1739F /* GameAuthTests.xctest */,
+				10BA02A9299A7C5700A1739F /* GameAuthUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -697,9 +705,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		10BA028E299A7C5500A1739F /* PockerController */ = {
+		10BA028E299A7C5500A1739F /* GameAuth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10BA02B3299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerController" */;
+			buildConfigurationList = 10BA02B3299A7C5700A1739F /* Build configuration list for PBXNativeTarget "GameAuth" */;
 			buildPhases = (
 				D96BF1F03566E792AC13F93C /* [CP] Check Pods Manifest.lock */,
 				10BA028B299A7C5500A1739F /* Sources */,
@@ -711,14 +719,14 @@
 			);
 			dependencies = (
 			);
-			name = PockerController;
+			name = GameAuth;
 			productName = PockerController;
-			productReference = 10BA028F299A7C5500A1739F /* PockerController.app */;
+			productReference = 10BA028F299A7C5500A1739F /* GameAuth.app */;
 			productType = "com.apple.product-type.application";
 		};
-		10BA029E299A7C5700A1739F /* PockerControllerTests */ = {
+		10BA029E299A7C5700A1739F /* GameAuthTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10BA02B6299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerControllerTests" */;
+			buildConfigurationList = 10BA02B6299A7C5700A1739F /* Build configuration list for PBXNativeTarget "GameAuthTests" */;
 			buildPhases = (
 				4DF2054FCD7B50E80316205F /* [CP] Check Pods Manifest.lock */,
 				10BA029B299A7C5700A1739F /* Sources */,
@@ -730,14 +738,14 @@
 			dependencies = (
 				10BA02A1299A7C5700A1739F /* PBXTargetDependency */,
 			);
-			name = PockerControllerTests;
+			name = GameAuthTests;
 			productName = PockerControllerTests;
-			productReference = 10BA029F299A7C5700A1739F /* PockerControllerTests.xctest */;
+			productReference = 10BA029F299A7C5700A1739F /* GameAuthTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		10BA02A8299A7C5700A1739F /* PockerControllerUITests */ = {
+		10BA02A8299A7C5700A1739F /* GameAuthUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10BA02B9299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerControllerUITests" */;
+			buildConfigurationList = 10BA02B9299A7C5700A1739F /* Build configuration list for PBXNativeTarget "GameAuthUITests" */;
 			buildPhases = (
 				049FC0B5F0B6DF25E8B186FD /* [CP] Check Pods Manifest.lock */,
 				10BA02A5299A7C5700A1739F /* Sources */,
@@ -750,9 +758,9 @@
 			dependencies = (
 				10BA02AB299A7C5700A1739F /* PBXTargetDependency */,
 			);
-			name = PockerControllerUITests;
+			name = GameAuthUITests;
 			productName = PockerControllerUITests;
-			productReference = 10BA02A9299A7C5700A1739F /* PockerControllerUITests.xctest */;
+			productReference = 10BA02A9299A7C5700A1739F /* GameAuthUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -778,7 +786,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 10BA028A299A7C5500A1739F /* Build configuration list for PBXProject "PockerController" */;
+			buildConfigurationList = 10BA028A299A7C5500A1739F /* Build configuration list for PBXProject "GameAuth" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -791,9 +799,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				10BA028E299A7C5500A1739F /* PockerController */,
-				10BA029E299A7C5700A1739F /* PockerControllerTests */,
-				10BA02A8299A7C5700A1739F /* PockerControllerUITests */,
+				10BA028E299A7C5500A1739F /* GameAuth */,
+				10BA029E299A7C5700A1739F /* GameAuthTests */,
+				10BA02A8299A7C5700A1739F /* GameAuthUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1072,12 +1080,12 @@
 /* Begin PBXTargetDependency section */
 		10BA02A1299A7C5700A1739F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 10BA028E299A7C5500A1739F /* PockerController */;
+			target = 10BA028E299A7C5500A1739F /* GameAuth */;
 			targetProxy = 10BA02A0299A7C5700A1739F /* PBXContainerItemProxy */;
 		};
 		10BA02AB299A7C5700A1739F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 10BA028E299A7C5500A1739F /* PockerController */;
+			target = 10BA028E299A7C5500A1739F /* GameAuth */;
 			targetProxy = 10BA02AA299A7C5700A1739F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1279,7 +1287,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PockerController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PockerController";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameAuth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GameAuth";
 			};
 			name = Debug;
 		};
@@ -1299,7 +1307,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PockerController.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PockerController";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameAuth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GameAuth";
 			};
 			name = Release;
 		};
@@ -1342,7 +1350,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		10BA028A299A7C5500A1739F /* Build configuration list for PBXProject "PockerController" */ = {
+		10BA028A299A7C5500A1739F /* Build configuration list for PBXProject "GameAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10BA02B1299A7C5700A1739F /* Debug */,
@@ -1351,7 +1359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10BA02B3299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerController" */ = {
+		10BA02B3299A7C5700A1739F /* Build configuration list for PBXNativeTarget "GameAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10BA02B4299A7C5700A1739F /* Debug */,
@@ -1360,7 +1368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10BA02B6299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerControllerTests" */ = {
+		10BA02B6299A7C5700A1739F /* Build configuration list for PBXNativeTarget "GameAuthTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10BA02B7299A7C5700A1739F /* Debug */,
@@ -1369,7 +1377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10BA02B9299A7C5700A1739F /* Build configuration list for PBXNativeTarget "PockerControllerUITests" */ = {
+		10BA02B9299A7C5700A1739F /* Build configuration list for PBXNativeTarget "GameAuthUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10BA02BA299A7C5700A1739F /* Debug */,

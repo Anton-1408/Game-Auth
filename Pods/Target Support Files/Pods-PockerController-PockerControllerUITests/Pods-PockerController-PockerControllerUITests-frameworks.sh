@@ -41,7 +41,7 @@ install_framework()
 
   if [ -L "${source}" ]; then
     echo "Symlinked..."
-    source="$(readlink "${source}")"
+    source="$(readlink -f "${source}")"
   fi
 
   if [ -d "${source}/${BCSYMBOLMAP_DIR}" ]; then
@@ -177,17 +177,33 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AlertToast/AlertToast.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Cloudpayments/Cloudpayments.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CloudpaymentsNetworking/CloudpaymentsNetworking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MercariQRScanner/MercariQRScanner.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WrappingHStackLayout/WrappingHStackLayout.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YandexLoginSDK/YandexLoginSDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexMobileMetrica/Dynamic/Core/YandexMobileMetrica.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexMobileMetrica/Dynamic/Crashes/YandexMobileMetricaCrashes.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexPaySDK/Dynamic/YandexPaySDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexPaySDK/Dynamic/XPlatPaySDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AlertToast/AlertToast.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Cloudpayments/Cloudpayments.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CloudpaymentsNetworking/CloudpaymentsNetworking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MercariQRScanner/MercariQRScanner.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WrappingHStackLayout/WrappingHStackLayout.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YandexLoginSDK/YandexLoginSDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexMobileMetrica/Dynamic/Core/YandexMobileMetrica.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexMobileMetrica/Dynamic/Crashes/YandexMobileMetricaCrashes.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexPaySDK/Dynamic/YandexPaySDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/YandexPaySDK/Dynamic/XPlatPaySDK.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

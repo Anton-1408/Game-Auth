@@ -11,6 +11,10 @@ target 'PockerController' do
   pod 'Socket.IO-Client-Swift'
   pod 'WrappingHStackLayout', '~> 0.1.2'
 
+  pod 'Cloudpayments', :git =>  "https://github.com/cloudpayments/CloudPayments-SDK-iOS", :tag => '1.3.3'
+  pod 'CloudpaymentsNetworking', :git =>  "https://github.com/cloudpayments/CloudPayments-SDK-iOS", :tag => '1.3.3'
+  pod 'YandexLoginSDK', :modular_headers => true
+
   target 'PockerControllerTests' do
     inherit! :search_paths
     # Pods for testing

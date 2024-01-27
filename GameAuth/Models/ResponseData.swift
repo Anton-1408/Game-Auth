@@ -98,13 +98,11 @@ struct UserData: Decodable, Identifiable {
     var companyName: String
     var createdAt: String
     var email: String
-    var firstName: String
     var id: String
     var instagram: String
     var isActive: Bool
     var isEmailVerified: Bool
     var isLinkPublic: Bool
-    var lastName: String
     var name: String
     var phoneNumber: String
     var role: String
@@ -135,8 +133,6 @@ struct Player: Decodable, Identifiable {
 
 struct WaitingPlayer: Decodable, Identifiable {
     var id: String
-    var firstName: String
-    var lastName: String
     var name: String
     var instagram: String
     var email: String
@@ -154,7 +150,6 @@ struct BarRoomPlayer: Decodable, Identifiable {
     var id: String
     var instagram: String
     var gameMeetingToken: String
-    var firstName: String
     var email: String
     var companyName: String
     var avatar: String
@@ -221,13 +216,11 @@ struct PlayerInfo: Decodable {
     var companyName: String
     var createdAt: String
     var email: String
-    var firstName: String
     var id: String
     var instagram: String
     var isActive: Bool
     var isEmailVerified: Bool
     var isLinkPublic: Bool
-    var lastName: String
     var name: String
     var phoneNumber: String
     var role: String
